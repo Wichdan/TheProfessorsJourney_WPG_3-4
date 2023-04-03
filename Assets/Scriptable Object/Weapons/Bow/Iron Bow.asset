@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cba3b0701de5dd24582201bd611eb8dc, type: 3}
+  m_Name: Iron Bow
+  m_EditorClassIdentifier: 
+  theWeapon: {fileID: 225569014714893300, guid: 4a6ae8099ee14c64abfb2dc3619d326c, type: 3}
+  weaponName: Iron bow
+  radius: 0
+  bonusAttack: 0
+  attackSpeed: 1.3
+  staminaCost: 1
+  manaCost: 0
+  weaponType: 1
+  projectile: {fileID: 3514333919024930489, guid: 918ad8f79ace7294cbd43f692c8ab2a8, type: 3}
+  weaponIcon: {fileID: -1923439171, guid: bf179b750bcc66e4eb15372813c29e21, type: 3}

@@ -19,20 +19,21 @@ MonoBehaviour:
     sentence: Ini adalah papan kayu yang <color=blue>berisi</color> teks, ini cuma
       buat ngetest aja
     isNarrator: 1
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: -1
     dontUseHolderBG: 0
   - charName: Sign
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
     sentence: Test... 1... 2... 3...
     isNarrator: 1
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: -1
     dontUseHolderBG: 0
   - charName: Sign
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
     sentence: Selesai!
     isNarrator: 1
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: -1
     dontUseHolderBG: 0
+  dialogueBackgrounds: []
   isCanSkip: 0

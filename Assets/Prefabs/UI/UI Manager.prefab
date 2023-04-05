@@ -723,7 +723,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1831226427783953365
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4865,11 +4865,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dlgReference: {fileID: 0}
   dialoguePanel: {fileID: 8186808155398145310}
-  dialogueBG: {fileID: 2880198033502830138}
   nameHolder: {fileID: 8186808155404356714}
   endDialogueIcon: {fileID: 3714421881163127498}
   skipDialogue: {fileID: 8186808155508950584}
-  dialogueBGImage: {fileID: 2685733964108997537}
+  dlgBG: {fileID: 2685733964108997537}
   dialogueHolderBG: {fileID: 8186808155836436224}
   index: 0
   textSpeed: 0.03

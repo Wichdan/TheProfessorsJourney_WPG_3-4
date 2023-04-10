@@ -84,7 +84,7 @@ public class DialogueManager : MonoBehaviour
 
         dialogueHolderBG.enabled = !dlgReference.conversation[index].dontUseHolderBG;
 
-        if(dlgReference.conversation[index].dlgBGIndex >= 0){
+        if(dlgReference.conversation[index].dlgBGIndex >= 0 && dlgReference.dialogueBackgrounds != null){
             dlgBG.enabled = true;
             dlgBG.sprite = dlgReference.dialogueBackgrounds[dlgReference.conversation[index].dlgBGIndex];
         }else

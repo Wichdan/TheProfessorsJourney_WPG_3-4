@@ -13,10 +13,11 @@ public class Dialogue : ScriptableObject
         [TextArea(1, 3)]
         public string sentence;
         public bool isNarrator;
-        public Sprite dialogueBG;
+        public int dlgBGIndex;
         public bool dontUseHolderBG;
     }
     
     public List<Conversation> conversation;
+    public List<Sprite> dialogueBackgrounds;
     public bool isCanSkip;
 }

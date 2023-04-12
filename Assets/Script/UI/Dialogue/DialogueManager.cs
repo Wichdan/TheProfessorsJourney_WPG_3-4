@@ -7,14 +7,14 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     [SerializeField] Dialogue dlgReference;
-    [SerializeField] GameObject dialoguePanel, dialogueBG, nameHolder, endDialogueIcon, skipDialogue;
-    [SerializeField] Image dialogueBGImage, dialogueHolderBG;
+    [SerializeField] GameObject dialoguePanel, nameHolder, endDialogueIcon, skipDialogue;
+    [SerializeField] Image dlgBG, dialogueHolderBG;
     [SerializeField] int index;
     [SerializeField] float textSpeed;
     [SerializeField] TextMeshProUGUI nameText, sentenceText;
     [SerializeField] Image leftPortrait, rightPortrait;
     [SerializeField] private TMP_Text m_textMeshPro;
-    [SerializeField] bool isCutscene = false;
+    [SerializeField] bool isStartWhenPlay = false;
     Player player;
 
     #region Singleton
@@ -28,7 +28,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Start() {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        if(isCutscene){
+        if(isStartWhenPlay){
             StartDialogue();
             player.isInteracting = true;
         }
@@ -53,7 +53,7 @@ public class DialogueManager : MonoBehaviour
             player.isInteracting = false;
             dialoguePanel.SetActive(false);
             player.isCanInteract = false;
-            dialogueBG.SetActive(false);
+            //dialogueBG.SetActive(false);
             return;
         }
 
@@ -84,10 +84,11 @@ public class DialogueManager : MonoBehaviour
 
         dialogueHolderBG.enabled = !dlgReference.conversation[index].dontUseHolderBG;
 
-        if(dlgReference.conversation[index].dialogueBG != null){
-            dialogueBG.SetActive(true);
-            dialogueBGImage.sprite = dlgReference.conversation[index].dialogueBG;
-        }
+        if(dlgReference.conversation[index].dlgBGIndex >= 0 && dlgReference.dialogueBackgrounds != null){
+            dlgBG.enabled = true;
+            dlgBG.sprite = dlgReference.dialogueBackgrounds[dlgReference.conversation[index].dlgBGIndex];
+        }else
+            dlgBG.enabled = false;
 
         bool showName = dlgReference.conversation[index].charName != "";
         nameHolder.SetActive(showName);

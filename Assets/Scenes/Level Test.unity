@@ -66735,6 +66735,10 @@ PrefabInstance:
       propertyPath: dlgReference
       value: 
       objectReference: {fileID: 11400000, guid: aa8c634851d8ba84da49b87dfc675107, type: 2}
+    - target: {fileID: 8186808155773942269, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
+      propertyPath: isStartWhenPlay
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
 --- !u!114 &1468728045 stripped

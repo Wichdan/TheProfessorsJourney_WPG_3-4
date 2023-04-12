@@ -18,35 +18,35 @@ MonoBehaviour:
     rightPortrait: {fileID: 0}
     sentence: <color=white>2047
     isNarrator: 1
-    dialogueBG: {fileID: 21300000, guid: 5b25134c0de30584bb6f6a645b06558c, type: 3}
+    dlgBGIndex: 0
     dontUseHolderBG: 1
   - charName: 
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
     sentence: <color=white>Bumi merupakan planet yang kita huni saat ini
     isNarrator: 1
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 0
     dontUseHolderBG: 1
   - charName: 
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
     sentence: '<color=white>Kehidupan di bumi sangat normal dan merupakan masa keemasannya '
     isNarrator: 1
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 0
     dontUseHolderBG: 1
   - charName: 
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
     sentence: "<color=white>Namun\u2026\u2026"
     isNarrator: 1
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 0
     dontUseHolderBG: 1
   - charName: 
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
     sentence: <color=white>3 Tahun kemudian
     isNarrator: 1
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 0
     dontUseHolderBG: 1
   - charName: 
     leftPortrait: {fileID: 0}
@@ -54,21 +54,21 @@ MonoBehaviour:
     sentence: <color=white>Suatu kiamat yang besar hampir menghilangkan seluruh populasi
       di bumi
     isNarrator: 1
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 0
     dontUseHolderBG: 1
   - charName: 
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
     sentence: <color=white>Bangunan-bangunan megah menjadi reruntuhan
     isNarrator: 1
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 0
     dontUseHolderBG: 1
   - charName: 
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
     sentence: <color=white>Retakan ruang dan waktu terjadi di mana-mana
     isNarrator: 1
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 0
     dontUseHolderBG: 1
   - charName: 
     leftPortrait: {fileID: 0}
@@ -76,7 +76,7 @@ MonoBehaviour:
     sentence: <color=white>Terdapat banyak sekali lobang-lobang pada setiap bangunan
       yang terlihat
     isNarrator: 1
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 0
     dontUseHolderBG: 1
   - charName: 
     leftPortrait: {fileID: 0}
@@ -84,7 +84,7 @@ MonoBehaviour:
     sentence: "<color=white>Dan\u2026 Tidak terlihat satupun jejak kehidupan pada
       bumi ini"
     isNarrator: 1
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 0
     dontUseHolderBG: 1
   - charName: 
     leftPortrait: {fileID: 0}
@@ -92,49 +92,49 @@ MonoBehaviour:
     sentence: "<color=white>Dan\u2026 Tidak terlihat satupun jejak kehidupan pada
       bumi ini"
     isNarrator: 1
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 0
     dontUseHolderBG: 1
   - charName: Kamu
     leftPortrait: {fileID: 21300000, guid: e6fe47acae66a0a41b8990109fe63b92, type: 3}
     rightPortrait: {fileID: 0}
     sentence: "Ugh\u2026."
     isNarrator: 0
-    dialogueBG: {fileID: 21300000, guid: 6f43a81eada833b438068eb824bebc03, type: 3}
+    dlgBGIndex: 1
     dontUseHolderBG: 0
   - charName: Kamu
     leftPortrait: {fileID: 21300000, guid: e6fe47acae66a0a41b8990109fe63b92, type: 3}
     rightPortrait: {fileID: 0}
     sentence: Di mana Aku?
     isNarrator: 0
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 1
     dontUseHolderBG: 0
   - charName: Kamu
     leftPortrait: {fileID: 21300000, guid: e6fe47acae66a0a41b8990109fe63b92, type: 3}
     rightPortrait: {fileID: 0}
     sentence: Apa ini? Mengapa Aku terbangun di sini?
     isNarrator: 0
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 1
     dontUseHolderBG: 0
   - charName: Kamu
     leftPortrait: {fileID: 21300000, guid: e6fe47acae66a0a41b8990109fe63b92, type: 3}
     rightPortrait: {fileID: 0}
     sentence: Apakah Aku berada dalam dunia mimpi?
     isNarrator: 0
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 1
     dontUseHolderBG: 0
   - charName: 
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
     sentence: <color=white>5 Menit kemudian
     isNarrator: 1
-    dialogueBG: {fileID: 21300000, guid: 5b25134c0de30584bb6f6a645b06558c, type: 3}
+    dlgBGIndex: 0
     dontUseHolderBG: 1
   - charName: Kamu
     leftPortrait: {fileID: 21300000, guid: e6fe47acae66a0a41b8990109fe63b92, type: 3}
     rightPortrait: {fileID: 0}
     sentence: "Tidak\u2026 Sepertinya Aku tidak berada dalam dunia mimpi"
     isNarrator: 0
-    dialogueBG: {fileID: 21300000, guid: 6f43a81eada833b438068eb824bebc03, type: 3}
+    dlgBGIndex: 1
     dontUseHolderBG: 0
   - charName: Kamu
     leftPortrait: {fileID: 21300000, guid: e6fe47acae66a0a41b8990109fe63b92, type: 3}
@@ -142,7 +142,7 @@ MonoBehaviour:
     sentence: Aku ingat apa yang telah terjadi kepada dunia ini. Dunia ini telah
       hancur!!
     isNarrator: 0
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 1
     dontUseHolderBG: 0
   - charName: Kamu
     leftPortrait: {fileID: 21300000, guid: e6fe47acae66a0a41b8990109fe63b92, type: 3}
@@ -150,7 +150,7 @@ MonoBehaviour:
     sentence: "Tidak\u2026 tenang. Ini bukanlah akhir dari segalanya, jika Aku bisa
       menemukan alat itu, Aku bisa mengubah dunia ini kembali seperti semula"
     isNarrator: 0
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 1
     dontUseHolderBG: 0
   - charName: Kamu
     leftPortrait: {fileID: 21300000, guid: e6fe47acae66a0a41b8990109fe63b92, type: 3}
@@ -158,7 +158,7 @@ MonoBehaviour:
     sentence: "Tidak\u2026 tenang. Ini bukanlah akhir dari segalanya, jika Aku bisa
       menemukan alat itu, Aku bisa mengubah dunia ini kembali seperti semula"
     isNarrator: 0
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 1
     dontUseHolderBG: 0
   - charName: Kamu
     leftPortrait: {fileID: 21300000, guid: e6fe47acae66a0a41b8990109fe63b92, type: 3}
@@ -166,7 +166,7 @@ MonoBehaviour:
     sentence: Tapi Aku harus kembali ke tempatku kerjaku terlebih dahulu untuk mendapatkan
       alat tersebut
     isNarrator: 0
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 1
     dontUseHolderBG: 0
   - charName: Kamu
     leftPortrait: {fileID: 21300000, guid: e6fe47acae66a0a41b8990109fe63b92, type: 3}
@@ -175,7 +175,7 @@ MonoBehaviour:
       oleh puing reruntuhan. Namun, sepertinya Aku bisa melihat suatu portal yang
       sepertinya efek samping dari pecahan ruang dan waktu
     isNarrator: 0
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 1
     dontUseHolderBG: 0
   - charName: Kamu
     leftPortrait: {fileID: 21300000, guid: e6fe47acae66a0a41b8990109fe63b92, type: 3}
@@ -183,6 +183,9 @@ MonoBehaviour:
     sentence: Lebih baik Aku segera bertindak dan memasuki portal tersebut daripada
       Aku terjebak terus di tempat ini
     isNarrator: 0
-    dialogueBG: {fileID: 0}
+    dlgBGIndex: 1
     dontUseHolderBG: 0
+  dialogueBackgrounds:
+  - {fileID: 21300000, guid: 5b25134c0de30584bb6f6a645b06558c, type: 3}
+  - {fileID: 21300000, guid: 6f43a81eada833b438068eb824bebc03, type: 3}
   isCanSkip: 0

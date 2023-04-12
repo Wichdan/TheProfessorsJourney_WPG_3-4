@@ -18,13 +18,21 @@ MonoBehaviour:
     rightPortrait: {fileID: 0}
     sentence: Bang minta bantuan... tadi orang itu gk kasih apa2
     isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
   - charName: Viking 1
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
     sentence: Ohh boleh boleh... tapi kamu harus kalahin 3 musuh
     isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
   - charName: Kamu
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
     sentence: Kamu di scam :v
     isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  dialogueBackgrounds: []
+  isCanSkip: 1

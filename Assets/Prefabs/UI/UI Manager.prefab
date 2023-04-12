@@ -468,7 +468,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1831226427783953365
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4546,8 +4546,8 @@ MonoBehaviour:
     teks ini maka terdapat error... Test... 1... 2... 3... 4... 5... 6... 7... 8...
     9... 10... ... ... ... ...ERROR
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6384568e3f779054aa3235dd6114495e, type: 2}
-  m_sharedMaterial: {fileID: 7944827920018257057, guid: 6384568e3f779054aa3235dd6114495e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e60390a4bc98b6847bf333d2b933cf99, type: 2}
+  m_sharedMaterial: {fileID: -1679896872465007704, guid: e60390a4bc98b6847bf333d2b933cf99, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4581,9 +4581,9 @@ MonoBehaviour:
   m_HorizontalAlignment: 8
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: 2
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -10
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -4607,7 +4607,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 32, y: 32, z: 32, w: 32}
+  m_margin: {x: 77, y: 45, z: 77, w: 32}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4681,8 +4681,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Nama Karakter
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6384568e3f779054aa3235dd6114495e, type: 2}
-  m_sharedMaterial: {fileID: 7944827920018257057, guid: 6384568e3f779054aa3235dd6114495e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e60390a4bc98b6847bf333d2b933cf99, type: 2}
+  m_sharedMaterial: {fileID: -1679896872465007704, guid: e60390a4bc98b6847bf333d2b933cf99, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4816,8 +4816,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Skip
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6384568e3f779054aa3235dd6114495e, type: 2}
-  m_sharedMaterial: {fileID: 7944827920018257057, guid: 6384568e3f779054aa3235dd6114495e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e60390a4bc98b6847bf333d2b933cf99, type: 2}
+  m_sharedMaterial: {fileID: -1679896872465007704, guid: e60390a4bc98b6847bf333d2b933cf99, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4929,11 +4929,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dlgReference: {fileID: 0}
   dialoguePanel: {fileID: 8186808155398145310}
-  dialogueBG: {fileID: 2880198033502830138}
   nameHolder: {fileID: 8186808155404356714}
   endDialogueIcon: {fileID: 3714421881163127498}
   skipDialogue: {fileID: 8186808155508950584}
-  dialogueBGImage: {fileID: 2685733964108997537}
+  dlgBG: {fileID: 2685733964108997537}
   dialogueHolderBG: {fileID: 8186808155836436224}
   index: 0
   textSpeed: 0.03
@@ -4942,7 +4941,7 @@ MonoBehaviour:
   leftPortrait: {fileID: 8186808154682278496}
   rightPortrait: {fileID: 8186808154335551690}
   m_textMeshPro: {fileID: 8186808155616904402}
-  isCutscene: 0
+  isStartWhenPlay: 0
 --- !u!1 &8186808155810926889
 GameObject:
   m_ObjectHideFlags: 0

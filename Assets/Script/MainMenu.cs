@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] int selectedLevel;
     [SerializeField] Button startGameButton;
     [SerializeField] bool isStartGame;
-    [SerializeField] GameObject TitleSceenPanel, chapterPanel;
+    [SerializeField] GameObject TitleSceenPanel, MainMenuPanel;
 
     private void Start()
     {
@@ -23,7 +23,7 @@ public class MainMenu : MonoBehaviour
             isStartGame = true;
 
         if(isStartGame){
-            chapterPanel.SetActive(true);
+            MainMenuPanel.SetActive(true);
             TitleSceenPanel.SetActive(false);
         }
     }
@@ -45,4 +45,5 @@ public class MainMenu : MonoBehaviour
     }
 
     public void ChangeStartGame(bool isStartGame) => this.isStartGame = isStartGame;
+    
 }

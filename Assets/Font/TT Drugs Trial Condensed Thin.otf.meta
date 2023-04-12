@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 61d86a5c0214e6b4086bea6a999b33bd
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - TT Drugs Trl Cnd
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 309d58b403ca8bf4da63c1d18acd7a50, type: 3}
+  - {fileID: 12800000, guid: c0a8efbf49b3bb34ab89643c9db9febf, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: d5320550841d6f54dbfaf52d7faed037
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - TT Drugs Trial
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e2f39bde5656506458350becb1288874, type: 3}
+  - {fileID: 12800000, guid: c40c755391e561046961128bd1c332ad, type: 3}
+  - {fileID: 12800000, guid: 456666467f49cf648ad08a86a2eec1a3, type: 3}
+  - {fileID: 12800000, guid: 90cbf13cd3c06254f94479c8b5f743ad, type: 3}
+  - {fileID: 12800000, guid: 420e8ccdaa1a6834aa79374c7be5ffa1, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

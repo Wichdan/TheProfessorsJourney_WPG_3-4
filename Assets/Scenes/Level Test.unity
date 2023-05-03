@@ -66687,6 +66687,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 6857127892729831621, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6857127892729831621, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889688525951988281, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6889688525951988281, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6912557394643322261, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -66739,11 +66755,19 @@ PrefabInstance:
       propertyPath: isStartWhenPlay
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8212029420988145216, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212029420988145216, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
 --- !u!114 &1468728045 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4100293284369539791, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1837011142924582379, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
   m_PrefabInstance: {fileID: 1468728044}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}

@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
-        startGameButton.interactable = false;
+        //startGameButton.interactable = false;
     }
 
     private void Update()

@@ -9,11 +9,13 @@ public class MainMenu : MonoBehaviour
     [SerializeField] int selectedLevel;
     [SerializeField] Button startGameButton;
     [SerializeField] bool isStartGame;
-    [SerializeField] GameObject TitleSceenPanel, MainMenuPanel;
+    [SerializeField] AudioSource Music;
+    [SerializeField] GameObject TitleSceenPanel, MainMenuPanel, NewGamePanel, OptionPanel, ControlPanel, VolumePanel, SystemPanel;
 
     private void Start()
     {
         startGameButton.interactable = false;
+        Music.Play();
     }
 
     private void Update()
@@ -25,6 +27,9 @@ public class MainMenu : MonoBehaviour
         if(isStartGame){
             MainMenuPanel.SetActive(true);
             TitleSceenPanel.SetActive(false);
+            OptionPanel.SetActive(false);
+            VolumePanel.SetActive(false);
+            SystemPanel.SetActive(false);
         }
     }
 
@@ -45,5 +50,50 @@ public class MainMenu : MonoBehaviour
     }
 
     public void ChangeStartGame(bool isStartGame) => this.isStartGame = isStartGame;
+
+    public void BackToMainMenu()
+    {
+        NewGamePanel.SetActive(false);
+        OptionPanel.SetActive(false);
+        ControlPanel.SetActive(false);
+        VolumePanel.SetActive(false);
+        SystemPanel.SetActive(false);
+    }
+    public void OpenNewGame()
+    {
+        NewGamePanel.SetActive(true);
+    }
+
+    public void OpenOptions()
+    {
+        OptionPanel.SetActive(true);
+        ControlPanel.SetActive(true);
+        VolumePanel.SetActive(false);
+        SystemPanel.SetActive(false);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void ControlOptions()
+    {
+        ControlPanel.SetActive(true);
+        VolumePanel.SetActive(false);
+        SystemPanel.SetActive(false);
+    }
+    public void VolumeOptions()
+    {
+        ControlPanel.SetActive(false);
+        VolumePanel.SetActive(true);
+        SystemPanel.SetActive(false);
+    }
+    public void SystemOptions()
+    {
+        ControlPanel.SetActive(false);
+        VolumePanel.SetActive(false);
+        SystemPanel.SetActive(true);
+    }
     
 }

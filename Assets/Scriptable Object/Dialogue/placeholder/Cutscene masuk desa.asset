@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9b29d575fe4424290009b0a8f3b6d7, type: 3}
+  m_Name: Cutscene masuk desa
+  m_EditorClassIdentifier: 
+  conversation:
+  - charName: Kamu
+    leftPortrait: {fileID: 21300000, guid: e6fe47acae66a0a41b8990109fe63b92, type: 3}
+    rightPortrait: {fileID: 21300000, guid: ccef97b93210bfc47a12b2d67e73dc76, type: 3}
+    sentence: Mengapa kau membawaku? aku disini bermaksud baik
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Viking
+    leftPortrait: {fileID: 21300000, guid: e6fe47acae66a0a41b8990109fe63b92, type: 3}
+    rightPortrait: {fileID: 21300000, guid: ccef97b93210bfc47a12b2d67e73dc76, type: 3}
+    sentence: $#$#$#$#$#
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  dialogueBackgrounds: []
+  isCanSkip: 0

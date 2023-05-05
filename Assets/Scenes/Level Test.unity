@@ -80927,7 +80927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 852fab2a6ef0fa644b3299d93ade85b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theDialogue: {fileID: 11400000, guid: d5d1adafb0d30e848b4bd0cb5847ec12, type: 2}
+  theDialogue: {fileID: 11400000, guid: 7deed17b150256947b68a8577a3c5ce1, type: 2}
   isMission: 0
 --- !u!1 &1920824685
 GameObject:

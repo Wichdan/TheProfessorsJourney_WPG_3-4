@@ -21,4 +21,4 @@ MonoBehaviour:
   manaCost: 0
   weaponType: 0
   projectile: {fileID: 0}
-  weaponIcon: {fileID: -1867739053, guid: bf179b750bcc66e4eb15372813c29e21, type: 3}
+  weaponIcon: {fileID: 21300000, guid: 541408fddc03f7546939c4d90c0223e4, type: 3}

@@ -9,11 +9,17 @@ public class MainMenu : MonoBehaviour
     [SerializeField] int selectedLevel;
     [SerializeField] Button startGameButton;
     [SerializeField] bool isStartGame;
-    [SerializeField] GameObject TitleSceenPanel, MainMenuPanel;
+    [SerializeField] AudioSource Music;
+    [SerializeField] GameObject TitleSceenPanel, MainMenuPanel, NewGamePanel, OptionPanel, ControlPanel, VolumePanel, SystemPanel;
 
     private void Start()
     {
+<<<<<<< HEAD
         //startGameButton.interactable = false;
+=======
+        startGameButton.interactable = false;
+        Music.Play();
+>>>>>>> 85dc7130318cc792b4ac4341c9b8d83a3d3f7f50
     }
 
     private void Update()
@@ -25,6 +31,9 @@ public class MainMenu : MonoBehaviour
         if(isStartGame){
             MainMenuPanel.SetActive(true);
             TitleSceenPanel.SetActive(false);
+            OptionPanel.SetActive(false);
+            VolumePanel.SetActive(false);
+            SystemPanel.SetActive(false);
         }
     }
 
@@ -46,8 +55,54 @@ public class MainMenu : MonoBehaviour
 
     public void ChangeStartGame(bool isStartGame) => this.isStartGame = isStartGame;
 
+<<<<<<< HEAD
     public void ChangeScene(int index){
         SceneManager.LoadScene(index);
+=======
+    public void BackToMainMenu()
+    {
+        NewGamePanel.SetActive(false);
+        OptionPanel.SetActive(false);
+        ControlPanel.SetActive(false);
+        VolumePanel.SetActive(false);
+        SystemPanel.SetActive(false);
+    }
+    public void OpenNewGame()
+    {
+        NewGamePanel.SetActive(true);
+    }
+
+    public void OpenOptions()
+    {
+        OptionPanel.SetActive(true);
+        ControlPanel.SetActive(true);
+        VolumePanel.SetActive(false);
+        SystemPanel.SetActive(false);
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void ControlOptions()
+    {
+        ControlPanel.SetActive(true);
+        VolumePanel.SetActive(false);
+        SystemPanel.SetActive(false);
+    }
+    public void VolumeOptions()
+    {
+        ControlPanel.SetActive(false);
+        VolumePanel.SetActive(true);
+        SystemPanel.SetActive(false);
+    }
+    public void SystemOptions()
+    {
+        ControlPanel.SetActive(false);
+        VolumePanel.SetActive(false);
+        SystemPanel.SetActive(true);
+>>>>>>> 85dc7130318cc792b4ac4341c9b8d83a3d3f7f50
     }
     
 }

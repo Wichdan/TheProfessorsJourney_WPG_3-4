@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class BattleTrigger : MonoBehaviour
 {
-    [SerializeField] GameObject battleArena;
-    [SerializeField] Transform camFocus;
-    [SerializeField] Cinemachine.CinemachineVirtualCamera cinemachine;
-    [SerializeField] GameObject player;
-
-    public void StartBattle()
+    [SerializeField] int arenaId;
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        cinemachine.Follow = camFocus;
-        battleArena.SetActive(true);
-        Destroy(gameObject);
-        player.transform.position = camFocus.position;
+        if(other.gameObject.tag == "Player"){
+            BattleManager.instance.SetArenaID(arenaId);
+            Destroy(gameObject);
+        }
     }
 }

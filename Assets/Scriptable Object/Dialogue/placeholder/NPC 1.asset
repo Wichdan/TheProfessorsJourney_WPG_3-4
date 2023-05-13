@@ -43,3 +43,6 @@ MonoBehaviour:
     dontUseHolderBG: 0
   dialogueBackgrounds: []
   isCanSkip: 0
+  isGetSomething: 1
+  getSomething:
+    updateMission: 1

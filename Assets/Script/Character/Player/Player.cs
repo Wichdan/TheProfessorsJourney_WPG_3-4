@@ -123,7 +123,7 @@ public class Player : MonoBehaviour
             StartCoroutine(DisableInteract());
             DialogueManager.instance.StartDialogue();
             isInteracting = true;
-            MissionManager.instance.AddNPCCount(1, dialogueTrigger);
+            //MissionManager.instance.AddNPCCount(1, dialogueTrigger);
             //Debug.Log("Interact!");
         }
     }
@@ -163,15 +163,14 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag == "Interacable")
         {
             isCanInteract = true;
-            dialogueTrigger = other.GetComponent<DialogueTrigger>();
-            if (dialogueTrigger == null) return;
-            DialogueManager.instance.SetDialogue(dialogueTrigger.theDialogue);
+            //dialogueTrigger = other.GetComponent<DialogueTrigger>();
+            //if (dialogueTrigger == null) return;
+            //DialogueManager.instance.SetDialogue(dialogueTrigger.theDialogue);
         }
 
         if (other.gameObject.tag == "EnemyWorld")
         {
-            BattleTrigger bt = other.gameObject.GetComponent<BattleTrigger>();
-            bt.StartBattle();
+            BattleManager.instance.StartBattle();
         }
     }
 

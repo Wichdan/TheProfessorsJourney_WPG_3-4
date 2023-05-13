@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,11 +15,19 @@ public class UIManager : MonoBehaviour
     [SerializeField] Animator screenEffectAnim;
     [SerializeField] GameObject pausedUI;
     [SerializeField] bool isPaused;
+    [SerializeField] Image weaponIcon;
+    [SerializeField] TextMeshProUGUI objectiveText;
 
+    public static UIManager instance;
     private void Awake()
     {
+        instance = this;
+    }
+
+    private void Start()
+    {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Character>();
-        
+
         staminaSystem.maxValue = player.MaxStamina;
         manaSystem.maxValue = player.MaxMana;
         defenseSystem.maxValue = player.Defense;
@@ -26,8 +35,6 @@ public class UIManager : MonoBehaviour
         highHp = player.HealthPoint * 90 / 100;
         medHP = player.HealthPoint * 50 / 100;
         lowHP = player.HealthPoint * 30 / 100;
-        
-
         //Debug.Log("High HP: " + highHp + " Med HP: " + medHP + " Low HP: " + lowHP);
     }
 
@@ -38,11 +45,12 @@ public class UIManager : MonoBehaviour
         defenseSystem.value = player.Defense;
         ChangeScreenEffect();
 
-        if(Input.GetKeyDown(KeyCode.Escape)){
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
             flipIsPaused();
         }
 
-        if(isPaused)
+        if (isPaused)
             PausedGame();
         else
             ContinueGame();
@@ -54,19 +62,30 @@ public class UIManager : MonoBehaviour
         if (hp > highHp)
             screenEffect.enabled = false;
         screenEffectAnim.SetFloat("HP", hp);
-        
+
     }
 
     void flipIsPaused() => isPaused = !isPaused;
 
-    void PausedGame(){
+    void PausedGame()
+    {
         Time.timeScale = 0;
         pausedUI.SetActive(true);
     }
 
-    public void ContinueGame(){
+    public void ContinueGame()
+    {
         Time.timeScale = 1;
         pausedUI.SetActive(false);
         isPaused = false;
+    }
+
+    public void SetWeaponIcon(Sprite sprite)
+    {
+        weaponIcon.sprite = sprite;
+    }
+
+    public void UpdateObjectiveText(string objective){
+        objectiveText.text = objective;
     }
 }

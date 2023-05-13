@@ -26,9 +26,11 @@ public class DialogueManager : MonoBehaviour
     }
     #endregion
 
-    private void Start() {
+    private void Start()
+    {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        if(isStartWhenPlay){
+        if (isStartWhenPlay)
+        {
             StartDialogue();
             player.isInteracting = true;
         }
@@ -36,7 +38,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Z)&& player.isInteracting && !player.isInteract)
+        if (Input.GetKeyDown(KeyCode.Z) && player.isInteracting && !player.isInteract)
             NextDialogue();
     }
 
@@ -53,6 +55,11 @@ public class DialogueManager : MonoBehaviour
             player.isInteracting = false;
             dialoguePanel.SetActive(false);
             player.isCanInteract = false;
+
+            if (dlgReference.isGetSomething)
+            {
+                MissionManager.instance.AddNPCCount(dlgReference.getSomething.updateMission);
+            }
             //dialogueBG.SetActive(false);
             return;
         }
@@ -84,17 +91,19 @@ public class DialogueManager : MonoBehaviour
 
         dialogueHolderBG.enabled = !dlgReference.conversation[index].dontUseHolderBG;
 
-        if(dlgReference.conversation[index].dlgBGIndex >= 0 && dlgReference.dialogueBackgrounds != null){
+        if (dlgReference.conversation[index].dlgBGIndex >= 0 && dlgReference.dialogueBackgrounds != null)
+        {
             dlgBG.enabled = true;
             dlgBG.sprite = dlgReference.dialogueBackgrounds[dlgReference.conversation[index].dlgBGIndex];
-        }else
+        }
+        else
             dlgBG.enabled = false;
 
         bool showName = dlgReference.conversation[index].charName != "";
         nameHolder.SetActive(showName);
 
         skipDialogue.SetActive(dlgReference.isCanSkip);
-        
+
         StartCoroutine(DialogueAnimation());
     }
 

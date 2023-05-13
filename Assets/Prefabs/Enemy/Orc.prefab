@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7907720191624151179}
   - component: {fileID: 7907720191624151174}
   m_Layer: 8
-  m_Name: ph orc
+  m_Name: Orc
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

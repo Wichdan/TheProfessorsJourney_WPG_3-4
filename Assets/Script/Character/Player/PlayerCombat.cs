@@ -15,7 +15,7 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] List<Weapon> weaponSlot;
     [SerializeField] List<GameObject> theWeapon;
     [SerializeField] int selectedIndex;
-    [SerializeField] Image weaponIcon;
+    //[SerializeField] Image weaponIcon;
 
     [Header("Skill")]
     [SerializeField] float skillCD;
@@ -31,15 +31,15 @@ public class PlayerCombat : MonoBehaviour
     float tempAtkSpeed;
     int tempAtk;
     Player player;
-	
-	public List<Weapon> WeaponSlot { get => weaponSlot; set => weaponSlot = value; }
 
-	private void Awake()
+    public List<Weapon> WeaponSlot { get => weaponSlot; set => weaponSlot = value; }
+
+    private void Start()
     {
         stats = GetComponent<Character>();
         player = GetComponent<Player>();
-		
-		tempAtk = stats.Attack;
+
+        tempAtk = stats.Attack;
         tempAtkSpeed = stats.AttackSpeed;
 
         for (int i = 0; i < weaponSlot.Count; i++)
@@ -60,7 +60,7 @@ public class PlayerCombat : MonoBehaviour
 
     void Attack()
     {
-        if(player.isCaptured) return;
+        if (player.isCaptured) return;
         if (stats.Stamina - weaponSlot[selectedIndex].staminaCost <= 0) return;
         if (Input.GetKeyDown(KeyCode.X) && !stats.IsAttack && !stats.IsStun)
         {
@@ -86,8 +86,8 @@ public class PlayerCombat : MonoBehaviour
                 if (enemy.HealthPoint <= 0)
                 {
                     stats.Defense += 1;
-					MissionManager.instance.AddEnemyCount(1);
-				}
+                    //MissionManager.instance.AddEnemyCount(1);
+                }
             }
         }
     }
@@ -107,8 +107,8 @@ public class PlayerCombat : MonoBehaviour
             isUseSkill = true;
             SpawnAOE(1);
             StartCoroutine(DisableSkill());
-			stats.DecreaseMana(skill2ManaCost);
-		}
+            stats.DecreaseMana(skill2ManaCost);
+        }
     }
 
     void SpawnAOE(int index)
@@ -172,7 +172,7 @@ public class PlayerCombat : MonoBehaviour
         weaponAnim.SetFloat("moveX", player.tempMove.x);
         weaponAnim.SetFloat("moveY", player.tempMove.y);
 
-        weaponIcon.sprite = weaponSlot[selectedIndex].weaponIcon;
+        UIManager.instance.SetWeaponIcon(weaponSlot[selectedIndex].weaponIcon);
     }
 
     bool flipCondition(bool condition)
@@ -182,7 +182,8 @@ public class PlayerCombat : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
-        if (atkPoint != null){
+        if (atkPoint != null)
+        {
             Gizmos.DrawWireSphere(atkPoint.position, radius);
         }
     }

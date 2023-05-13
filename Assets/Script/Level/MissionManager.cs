@@ -32,12 +32,13 @@ public class MissionManager : MonoBehaviour
 
 	public List<Mission> theMission;
 	[SerializeField] int enemyCount, npcCount;
-	[SerializeField] TextMeshProUGUI txtObjective;
+	//[SerializeField] TextMeshProUGUI txtObjective;
 	[SerializeField] int missionIndex;
 	Character player;
 	PlayerCombat playerCombat;
 
-	[SerializeField] GameObject battleArena;
+	//[SerializeField] GameObject[] battleArena;
+	//[SerializeField] int arenaID;
 	[SerializeField] Cinemachine.CinemachineVirtualCamera cam;
 
 	#region  singleton
@@ -58,7 +59,7 @@ public class MissionManager : MonoBehaviour
 
 	public void StartMission()
 	{
-		txtObjective.text = theMission[missionIndex].objective;
+		UIManager.instance.UpdateObjectiveText(theMission[missionIndex].objective);
 		for (int i = 0; i < theMission[missionIndex].closedDoor.Length; i++)
 			theMission[missionIndex].closedDoor[i].SetActive(true);
 		enemyCount = 0;
@@ -77,7 +78,8 @@ public class MissionManager : MonoBehaviour
 		{
 			if (enemyCount >= theMission[missionIndex].enemyTotal){
 				Reward(theMission[missionIndex], theMission[missionIndex].reward);
-				battleArena.SetActive(false);
+				//battleArena[arenaID].SetActive(false);
+				BattleManager.instance.FinishBattle();
 				cam.Follow = player.transform;
 			}
 		}
@@ -101,18 +103,18 @@ public class MissionManager : MonoBehaviour
 	{
 		if (missionIndex >= theMission.Count - 1)
 		{
-			txtObjective.text = "All Clear!";
+			UIManager.instance.UpdateObjectiveText("All Clear!");
 			return;
 		}
 		missionIndex++;
 		StartMission();
 	}
 
-	public void AddNPCCount(int count, DialogueTrigger trigger)
+	public void AddNPCCount(int count)
 	{
-		if (!trigger.isMission) return;
+		//if (!trigger.isMission) return;
 		npcCount += count;
-		trigger.isMission = false;
+		//trigger.isMission = false;
 	}
 
 	public void AddEnemyCount(int count)

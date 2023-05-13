@@ -29,6 +29,7 @@ public class Enemy : MonoBehaviour
     Transform playerPos;
     Character stats;
     [SerializeField] Collider2D feetCollider;
+    [SerializeField] bool isMission;
 
     private void Awake()
     {
@@ -56,8 +57,11 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        if (stats.HealthPoint <= 0)
+        if (stats.HealthPoint <= 0){
             Destroy(gameObject);
+            if(isMission)
+                MissionManager.instance.AddEnemyCount(1);
+        }
 
         FacingPlayer();
 

@@ -30,7 +30,6 @@ public class DialogueManager : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         if(isStartWhenPlay){
             StartDialogue();
-            player.isInteracting = true;
         }
     }
 
@@ -44,6 +43,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
+        player.isInteracting = true;
         dialoguePanel.SetActive(true);
         StopAllCoroutines();
 

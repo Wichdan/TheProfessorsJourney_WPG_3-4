@@ -63,7 +63,12 @@ public class Player : MonoBehaviour
 
     void Move()
     {
-        if (!stats.IsCanMove || isInteracting || isCaptured) return;
+        if (!stats.IsCanMove || isInteracting || isCaptured)
+        {
+            movement = Vector2.zero;
+            anim.SetFloat("speed", movement.sqrMagnitude);
+            return;
+        }
 
         if (!stats.IsAttack || isInteracting)
             movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
@@ -123,7 +128,9 @@ public class Player : MonoBehaviour
             StartCoroutine(DisableInteract());
             DialogueManager.instance.StartDialogue();
             isInteracting = true;
-            MissionManager.instance.AddNPCCount(1, dialogueTrigger);
+
+            if (dialogueTrigger != null)
+                MissionManager.instance.AddNPCCount(1, dialogueTrigger);
             //Debug.Log("Interact!");
         }
     }
@@ -166,6 +173,16 @@ public class Player : MonoBehaviour
             dialogueTrigger = other.GetComponent<DialogueTrigger>();
             if (dialogueTrigger == null) return;
             DialogueManager.instance.SetDialogue(dialogueTrigger.theDialogue);
+        }
+
+        if (other.gameObject.tag == "InstantTrigger")
+        {
+            dialogueTrigger = other.gameObject.GetComponent<DialogueTrigger>();
+            if (dialogueTrigger == null) return;
+            DialogueManager.instance.SetDialogue(dialogueTrigger.theDialogue);
+            DialogueManager.instance.StartDialogue();
+            MissionManager.instance.AddNPCCount(1, dialogueTrigger);
+            Destroy(other.gameObject);
         }
 
         if (other.gameObject.tag == "EnemyWorld")

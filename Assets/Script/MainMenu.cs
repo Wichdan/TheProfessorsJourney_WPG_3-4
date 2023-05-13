@@ -45,5 +45,9 @@ public class MainMenu : MonoBehaviour
     }
 
     public void ChangeStartGame(bool isStartGame) => this.isStartGame = isStartGame;
+
+    public void ChangeScene(int index){
+        SceneManager.LoadScene(index);
+    }
     
 }

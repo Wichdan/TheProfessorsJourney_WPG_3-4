@@ -6523,6 +6523,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 925883222}
   m_OnClick:
     m_PersistentCalls:
+<<<<<<< HEAD
       m_Calls:
       - m_Target: {fileID: 146741916}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
@@ -6545,6 +6546,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+=======
+      m_Calls: []
+>>>>>>> parent of 4dd0943 (bayangan)
 --- !u!114 &925883222
 MonoBehaviour:
   m_ObjectHideFlags: 0

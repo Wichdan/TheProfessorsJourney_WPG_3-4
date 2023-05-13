@@ -54,6 +54,7 @@ public class MainMenu : MonoBehaviour
     }
 
     public void ChangeStartGame(bool isStartGame) => this.isStartGame = isStartGame;
+<<<<<<< HEAD
 
 <<<<<<< HEAD
     public void ChangeScene(int index){
@@ -104,5 +105,7 @@ public class MainMenu : MonoBehaviour
         SystemPanel.SetActive(true);
 >>>>>>> 85dc7130318cc792b4ac4341c9b8d83a3d3f7f50
     }
+=======
+>>>>>>> parent of 4dd0943 (bayangan)
     
 }

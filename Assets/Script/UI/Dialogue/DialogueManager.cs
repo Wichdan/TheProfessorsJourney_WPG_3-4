@@ -46,6 +46,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue()
     {
+        player.isInteracting = true;
         dialoguePanel.SetActive(true);
         StopAllCoroutines();
 

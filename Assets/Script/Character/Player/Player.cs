@@ -63,7 +63,12 @@ public class Player : MonoBehaviour
 
     void Move()
     {
-        if (!stats.IsCanMove || isInteracting || isCaptured) return;
+        if (!stats.IsCanMove || isInteracting || isCaptured)
+        {
+            movement = Vector2.zero;
+            anim.SetFloat("speed", movement.sqrMagnitude);
+            return;
+        }
 
         if (!stats.IsAttack || isInteracting)
             movement = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));

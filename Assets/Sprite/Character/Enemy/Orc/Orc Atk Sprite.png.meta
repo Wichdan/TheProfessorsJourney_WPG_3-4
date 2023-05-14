@@ -1,0 +1,817 @@
+fileFormatVersion: 2
+guid: 1ed02f511fe5fc64ebc7da18412a7698
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Orc Atk Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3498
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39bad7f0fd7338e4f8573813aeafe396
+      internalID: 671304113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 3498
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b30e4b2b4e3c34bbe63223248238e1
+      internalID: 1161968781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 3498
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c555933aed6666408c5243b8dd0bd90
+      internalID: 2084802536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 3498
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2441bd8019fcca44b83f756c2378f33
+      internalID: -774790959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 3498
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c58333ac5602e49bc39aae50a1a02d
+      internalID: -129955818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2915
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c434ee287174d43866ce892c1ba88e
+      internalID: -443043013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 2915
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968947036a7f4ac468ee98fcc6f91e97
+      internalID: -1423488399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 2915
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ef3cc669b45cd4db202db9adfb1902
+      internalID: 1336652338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 2915
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d4e527c9c3b6c47a30bb90b1ffbf56
+      internalID: 941143586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2915
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66067a87a823d34482b46ccffab9e10
+      internalID: 718763296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2332
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdaafebfa6167ef46b45c030f434c126
+      internalID: -209348616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 2332
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21887aec6316a6e428e2b5ced3771a42
+      internalID: -546042389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_12
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 2332
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47e359e47782134395aafbb28de371c
+      internalID: -75372963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_13
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 2332
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86d5b260c574195478e4c5dea20274b8
+      internalID: 270174477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_14
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 2332
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24f9aa446426ae4b96ee407cd4d4e8c
+      internalID: 133319809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1749
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb12363f8e1518429570d199fa5766f
+      internalID: 1556570166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_16
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1749
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8209dcff751947b44a961981ede13694
+      internalID: 2036899029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_17
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1749
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd225d6346a07dc4da336ad688b76976
+      internalID: 1018343078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_18
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1749
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af4bebd1fe4ff740b67199e06c7e10f
+      internalID: 1619569130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_19
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1749
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5941be945e612024a8780f6b1a0aa7d9
+      internalID: -231860809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1166
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e78d9c36e663445acdf728a419e9d1
+      internalID: 1732989924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_21
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1166
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347291eb1643fa74f97dda9d7dd89ed8
+      internalID: -1956044214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_22
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1166
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf38fe034d59b144a08c5e7c0fc6f50
+      internalID: -273873303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_23
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1166
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de14e0571fc9eb540a83195c1bfbef0a
+      internalID: -707254039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_24
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 1166
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609b084cf2fad494fad9ea2d4cb5115d
+      internalID: -486258402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 583
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 653e0dccd57e9f041aaa544ff54e84c5
+      internalID: -1223300591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_26
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 583
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09738ad1a363036418764c24a2f52a5c
+      internalID: -1624918995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_27
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 583
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f834440e0585e4c89176cf9e7b96e5
+      internalID: -1735425404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_28
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 583
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b3fe4f0839db244089e21f2b910dd32
+      internalID: -2055416083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_29
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 583
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b26c85c22f1a5044b091923f32d0c13
+      internalID: -208740173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orc Atk Sprite_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 510
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d75f28559ad24469e49cda352fe730
+      internalID: -2069847612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Orc Atk Sprite_27: -1735425404
+      Orc Atk Sprite_3: -774790959
+      Orc Atk Sprite_17: 1018343078
+      Orc Atk Sprite_18: 1619569130
+      Orc Atk Sprite_23: -707254039
+      Orc Atk Sprite_21: -1956044214
+      Orc Atk Sprite_12: -75372963
+      Orc Atk Sprite_26: -1624918995
+      Orc Atk Sprite_10: -209348616
+      Orc Atk Sprite_16: 2036899029
+      Orc Atk Sprite_8: 941143586
+      Orc Atk Sprite_30: -2069847612
+      Orc Atk Sprite_22: -273873303
+      Orc Atk Sprite_5: -443043013
+      Orc Atk Sprite_15: 1556570166
+      Orc Atk Sprite_29: -208740173
+      Orc Atk Sprite_28: -2055416083
+      Orc Atk Sprite_7: 1336652338
+      Orc Atk Sprite_14: 133319809
+      Orc Atk Sprite_0: 671304113
+      Orc Atk Sprite_19: -231860809
+      Orc Atk Sprite_24: -486258402
+      Orc Atk Sprite_1: 1161968781
+      Orc Atk Sprite_2: 2084802536
+      Orc Atk Sprite_25: -1223300591
+      Orc Atk Sprite_4: -129955818
+      Orc Atk Sprite_9: 718763296
+      Orc Atk Sprite_13: 270174477
+      Orc Atk Sprite_20: 1732989924
+      Orc Atk Sprite_6: -1423488399
+      Orc Atk Sprite_11: -546042389
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

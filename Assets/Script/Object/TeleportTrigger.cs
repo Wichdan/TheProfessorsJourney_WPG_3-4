@@ -4,16 +4,29 @@ using UnityEngine;
 
 public class TeleportTrigger : MonoBehaviour
 {
-    //public Transform camPos;
-    public Transform playerPos;
-    [SerializeField] PolygonCollider2D polygonCol;
+    [SerializeField] int tpID;
+    [SerializeField] Transform tpLocation;
 
-    [SerializeField] GameObject currentStage, nextStage;
-
-    public void NextStage(Cinemachine.CinemachineConfiner confiner)
+    GameObject player;
+    private void Start()
     {
-        currentStage.SetActive(false);
-        nextStage.SetActive(true);
-        confiner.m_BoundingShape2D = polygonCol;
+        player = GameObject.FindGameObjectWithTag("Player");
+        EventManager.triggerTeleportAction += Teleport;
+    }
+
+    public void Teleport(int _tpID)
+    {
+        if (tpID == _tpID)
+        {
+            player.transform.position = tpLocation.transform.position;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            EventManager.StartTeleport(tpID);
+        }
     }
 }

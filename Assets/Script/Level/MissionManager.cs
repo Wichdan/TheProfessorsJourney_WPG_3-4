@@ -32,13 +32,9 @@ public class MissionManager : MonoBehaviour
 
 	public List<Mission> theMission;
 	[SerializeField] int enemyCount, npcCount;
-	//[SerializeField] TextMeshProUGUI txtObjective;
 	[SerializeField] int missionIndex;
 	Character player;
 	PlayerCombat playerCombat;
-
-	//[SerializeField] GameObject[] battleArena;
-	//[SerializeField] int arenaID;
 	[SerializeField] Cinemachine.CinemachineVirtualCamera cam;
 
 	#region  singleton
@@ -78,7 +74,6 @@ public class MissionManager : MonoBehaviour
 		{
 			if (enemyCount >= theMission[missionIndex].enemyTotal){
 				Reward(theMission[missionIndex], theMission[missionIndex].reward);
-				//battleArena[arenaID].SetActive(false);
 				BattleManager.instance.FinishBattle();
 				cam.Follow = player.transform;
 			}
@@ -112,9 +107,7 @@ public class MissionManager : MonoBehaviour
 
 	public void AddNPCCount(int count)
 	{
-		//if (!trigger.isMission) return;
 		npcCount += count;
-		//trigger.isMission = false;
 	}
 
 	public void AddEnemyCount(int count)

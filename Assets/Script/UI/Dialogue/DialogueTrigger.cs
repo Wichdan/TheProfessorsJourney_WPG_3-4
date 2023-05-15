@@ -5,32 +5,29 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue theDialogue;
-    [SerializeField] int triggerID;
+    [SerializeField] bool isAutoInteract = false;
+    [SerializeField] bool isInteracted = false;
 
-    private void Start()
+    public void TriggerDialogue()
     {
-        EventManager.triggerDialogueAction += TriggerDialogue;
+        DialogueManager.instance.SetDialogue(theDialogue);
+        DialogueManager.instance.StartDialogue();
     }
 
-    public void TriggerDialogue(int _triggerID)
+    public void StartDialogue()
     {
-        if (triggerID == _triggerID)
-        {
-            DialogueManager.instance.SetDialogue(theDialogue);
-            DialogueManager.instance.StartDialogue();
-        }
-    }
-
-    private void OnDisable()
-    {
-        EventManager.triggerDialogueAction -= TriggerDialogue;
+        if(!isInteracted) return;
+        DialogueManager.instance.SetDialogue(theDialogue);
+        DialogueManager.instance.StartDialogue();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
-            EventManager.StartTriggerDialogue(triggerID);
+            if (isAutoInteract)
+                TriggerDialogue();
+
             DialogueManager.instance.SetDialogue(theDialogue);
         }
     }

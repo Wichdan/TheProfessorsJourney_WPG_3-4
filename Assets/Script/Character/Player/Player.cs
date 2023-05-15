@@ -24,8 +24,6 @@ public class Player : MonoBehaviour
     Animator anim;
     Character stats;
     PlayerCombat playerCombat;
-    [SerializeField] DialogueTrigger dialogueTrigger;
-
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -126,9 +124,8 @@ public class Player : MonoBehaviour
             stats.DisableMove();
             isInteract = true;
             StartCoroutine(DisableInteract());
-            DialogueManager.instance.StartDialogue();
+            //DialogueManager.instance.StartDialogue();
             isInteracting = true;
-            //MissionManager.instance.AddNPCCount(1, dialogueTrigger);
             //Debug.Log("Interact!");
         }
     }

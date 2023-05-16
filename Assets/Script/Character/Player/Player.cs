@@ -124,7 +124,7 @@ public class Player : MonoBehaviour
             stats.DisableMove();
             isInteract = true;
             StartCoroutine(DisableInteract());
-            //DialogueManager.instance.StartDialogue();
+            DialogueManager.instance.StartDialogue();
             isInteracting = true;
             //Debug.Log("Interact!");
         }

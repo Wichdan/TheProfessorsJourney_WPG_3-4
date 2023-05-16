@@ -6,32 +6,21 @@ public class ObjectTrigger : MonoBehaviour
 {
     [SerializeField] bool isAutoInteract = false;
     [SerializeField] bool isInteracted = false;
-    bool hasInteract;
-    Player player;
-
-    private void Update()
+    
+    public void DoInteract()
     {
-        if (isInteracted)
-        {
-            Debug.Log("Do Something!");
-        }
+        SwapInteracted();
+        Debug.Log("Do Something!");
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
-            player = other.gameObject.GetComponent<Player>();
             if (isAutoInteract)
-                SwapInteracted();
+                DoInteract();
         }
     }
 
     void SwapInteracted() => isInteracted = !isInteracted;
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if(other.gameObject.tag == "Player")
-            player = null;
-    }
 }

@@ -549,10 +549,10 @@ TextureImporter:
       name: Guide Book UI_21
       rect:
         serializedVersion: 2
-        x: 1158
-        y: 618
-        width: 617
-        height: 184
+        x: 1182
+        y: 657
+        width: 571
+        height: 119
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -570,10 +570,10 @@ TextureImporter:
       name: Guide Book UI_22
       rect:
         serializedVersion: 2
-        x: 2008
-        y: 609
-        width: 567
-        height: 173
+        x: 2033
+        y: 635
+        width: 500
+        height: 119
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,7 +659,7 @@ TextureImporter:
         width: 29
         height: 365
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -680,7 +680,7 @@ TextureImporter:
         width: 19
         height: 106
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

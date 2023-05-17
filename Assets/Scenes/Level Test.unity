@@ -567,7 +567,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -825,6 +825,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1418220567484429401, guid: 8514add531f593d459f4f8dd12f11c1d, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: e997c7fdb6fc0694fbb593843972267c, type: 2}
     - target: {fileID: 1418220567484429401, guid: 8514add531f593d459f4f8dd12f11c1d, type: 3}
       propertyPath: theDialogue
       value: 
@@ -80928,7 +80932,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 852fab2a6ef0fa644b3299d93ade85b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theDialogue: {fileID: 11400000, guid: 7deed17b150256947b68a8577a3c5ce1, type: 2}
+  dialogue: {fileID: 0}
+  isAutoInteract: 0
 --- !u!1 &1920824685
 GameObject:
   m_ObjectHideFlags: 0
@@ -80974,81 +80979,6 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
---- !u!1 &1969831138
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1969831139}
-  - component: {fileID: 1969831140}
-  m_Layer: 0
-  m_Name: Mission Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1969831139
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969831138}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1969831140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969831138}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3733010d6466bad4aa6229c0618d331f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theMission:
-  - missionName: Cari Desa
-    objective: Cari desa dan minta bantuan
-    objectiveType: 0
-    enemyTotal: 0
-    npcTotal: 2
-    closedDoor:
-    - {fileID: 1834157137}
-    - {fileID: 2134840578}
-    isClear: 0
-    reward:
-      weaponGet: {fileID: 0}
-      hpGet: 0
-      defGet: 0
-  - missionName: Kalahkan Musuh
-    objective: Kalahkan musuh yang ada di dekat desa
-    objectiveType: 1
-    enemyTotal: 3
-    npcTotal: 0
-    closedDoor:
-    - {fileID: 958419420}
-    - {fileID: 1140616509}
-    isClear: 0
-    reward:
-      weaponGet: {fileID: 0}
-      hpGet: 0
-      defGet: 0
-  enemyCount: 0
-  npcCount: 0
-  missionIndex: 0
-  cam: {fileID: 411133124}
 --- !u!1 &1979467813 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1704258200004475273, guid: 144f13cc8c7ff7e4993c36c64826d55b, type: 3}
@@ -81406,6 +81336,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1418220567484429401, guid: 8514add531f593d459f4f8dd12f11c1d, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: dc037e36b07d5ab4e8dbc3e6ffe2f43b, type: 2}
+    - target: {fileID: 1418220567484429401, guid: 8514add531f593d459f4f8dd12f11c1d, type: 3}
       propertyPath: theDialogue
       value: 
       objectReference: {fileID: 11400000, guid: dc037e36b07d5ab4e8dbc3e6ffe2f43b, type: 2}
@@ -81472,6 +81406,83 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 144f13cc8c7ff7e4993c36c64826d55b, type: 3}
+--- !u!1001 &3767227782308627894
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 411133124}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[0].closedDoor.Array.data[0]
+      value: 
+      objectReference: {fileID: 1834157137}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[0].closedDoor.Array.data[1]
+      value: 
+      objectReference: {fileID: 2134840578}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[1].closedDoor.Array.data[0]
+      value: 
+      objectReference: {fileID: 958419420}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[1].closedDoor.Array.data[1]
+      value: 
+      objectReference: {fileID: 1140616509}
+    - target: {fileID: 3767227781580339540, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: m_Name
+      value: Mission Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339541, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339541, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339541, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339541, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339541, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339541, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339541, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339541, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339541, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339541, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339541, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
 --- !u!1001 &5934236460576535768
 PrefabInstance:
   m_ObjectHideFlags: 0

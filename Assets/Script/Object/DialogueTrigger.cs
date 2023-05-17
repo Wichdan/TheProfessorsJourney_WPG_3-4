@@ -6,11 +6,14 @@ public class DialogueTrigger : MonoBehaviour
 {
     [SerializeField] Dialogue dialogue;
     [SerializeField] bool isAutoInteract = false;
+    [SerializeField] bool isDestoryAfterInteract = false;
     
     void AutoDialogue()
     {
         DialogueManager.instance.SetDialogue(dialogue);
         DialogueManager.instance.StartDialogue();
+        if(isDestoryAfterInteract)
+            Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -110,7 +110,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 3114
-        width: 5583
+        width: 2995
         height: 1688
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -554,7 +554,7 @@ TextureImporter:
         width: 617
         height: 184
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -575,7 +575,7 @@ TextureImporter:
         width: 567
         height: 173
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -596,7 +596,7 @@ TextureImporter:
         width: 374
         height: 111
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -617,7 +617,7 @@ TextureImporter:
         width: 367
         height: 114
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -638,7 +638,7 @@ TextureImporter:
         width: 59
         height: 105
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -646,6 +646,48 @@ TextureImporter:
       bones: []
       spriteID: b439859aa977da343acc5e43ff822b08
       internalID: -437747275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guide Book UI_26
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 3229
+        width: 29
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76c3adafc95b52841b0e63403297847d
+      internalID: 571181665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guide Book UI_27
+      rect:
+        serializedVersion: 2
+        x: 3531
+        y: 3307
+        width: 19
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e59da57723fe94caed0a2d56c42776
+      internalID: 830882333
       vertices: []
       indices: 
       edges: []
@@ -663,6 +705,7 @@ TextureImporter:
     nameFileIdTable:
       Guide Book UI_21: 1353651408
       Guide Book UI_8: 619839515
+      Guide Book UI_26: 571181665
       Guide Book UI_13: -2115949444
       Guide Book UI_24: -506478273
       Guide Book UI_14: -1252601683
@@ -685,6 +728,7 @@ TextureImporter:
       Guide Book UI_10: -1559325837
       Guide Book UI_16: -1481345490
       Guide Book UI_25: -437747275
+      Guide Book UI_27: 830882333
       Guide Book UI_22: 1555081884
       Guide Book UI_4: 979302760
   spritePackingTag: 

@@ -154,6 +154,7 @@ public class Player : MonoBehaviour
         {
             isCaptured = false;
             releaseValue = 0;
+            MissionManager.instance.SetEscapeCount(1);
             return;
         }
         if (Input.GetKeyDown(KeyCode.Z) && isCaptured)
@@ -173,6 +174,11 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag == "EnemyWorld")
         {
             BattleManager.instance.StartBattle();
+        }
+
+        if (other.gameObject.tag == "CaptureTrigger")
+        {
+            isCaptured = true;
         }
     }
 

@@ -13,10 +13,10 @@ public class MissionManager : MonoBehaviour
         public string objective;
         public enum ObjectiveType
         {
-            TalkToNPC, DefeatEnemy
+            TalkToNPC, DefeatEnemy, Escape
         }
         public ObjectiveType objectiveType;
-        public int enemyTotal, npcTotal;
+        public int enemyTotal, npcTotal, escapeTotal;
         public GameObject[] closedDoor;
         public bool isClear;
         public MissionReward reward;
@@ -31,7 +31,7 @@ public class MissionManager : MonoBehaviour
     }
 
     public List<Mission> theMission;
-    [SerializeField] int enemyCount, npcCount;
+    [SerializeField] int enemyCount, npcCount, escapeCount;
     [SerializeField] int missionIndex;
     Character player;
     PlayerCombat playerCombat;
@@ -75,7 +75,7 @@ public class MissionManager : MonoBehaviour
             if (npcCount >= theMission[missionIndex].npcTotal)
                 Reward(theMission[missionIndex], theMission[missionIndex].reward);
         }
-        else
+        else if(theMission[missionIndex].objectiveType == Mission.ObjectiveType.DefeatEnemy)
         {
             if (enemyCount >= theMission[missionIndex].enemyTotal)
             {
@@ -83,6 +83,9 @@ public class MissionManager : MonoBehaviour
                 BattleManager.instance.FinishBattle();
                 cam.Follow = player.transform;
             }
+        }else if(theMission[missionIndex].objectiveType == Mission.ObjectiveType.Escape){
+            if(escapeCount >= theMission[missionIndex].escapeTotal)
+                Reward(theMission[missionIndex], theMission[missionIndex].reward);
         }
     }
 
@@ -104,6 +107,8 @@ public class MissionManager : MonoBehaviour
         mission.isClear = true;
         UpdateMission();
     }
+
+    public void SetEscapeCount(int value) => escapeCount = value; 
 
     void UpdateMission()
     {

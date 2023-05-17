@@ -44,33 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3733010d6466bad4aa6229c0618d331f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theMission:
-  - missionName: Cari Desa
-    objective: Cari desa dan minta bantuan
-    objectiveType: 0
-    enemyTotal: 0
-    npcTotal: 2
-    closedDoor:
-    - {fileID: 0}
-    - {fileID: 0}
-    isClear: 0
-    reward:
-      weaponGet: {fileID: 0}
-      hpGet: 0
-      defGet: 0
-  - missionName: Kalahkan Musuh
-    objective: Kalahkan musuh yang ada di dekat desa
-    objectiveType: 1
-    enemyTotal: 3
-    npcTotal: 0
-    closedDoor:
-    - {fileID: 0}
-    - {fileID: 0}
-    isClear: 0
-    reward:
-      weaponGet: {fileID: 0}
-      hpGet: 0
-      defGet: 0
+  theMission: []
   enemyCount: 0
   npcCount: 0
   missionIndex: 0

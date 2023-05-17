@@ -1106,7 +1106,7 @@ Transform:
   - {fileID: 58401668}
   - {fileID: 1802525975}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &69021930
 GameObject:
@@ -3139,7 +3139,7 @@ GameObject:
   - component: {fileID: 290721966}
   - component: {fileID: 290721968}
   m_Layer: 0
-  m_Name: TP Trigger
+  m_Name: Tp to Village
   m_TagString: Untagged
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3178,13 +3178,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290721965}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.5, y: 28.5, z: 0}
   m_LocalScale: {x: 13, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 774724549}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &290721968
 MonoBehaviour:
@@ -4111,7 +4111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 387286653}
   m_Layer: 0
-  m_Name: Dialogue Triggers
+  m_Name: Triggers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4131,6 +4131,7 @@ Transform:
   m_Children:
   - {fileID: 1669500159}
   - {fileID: 1745625686}
+  - {fileID: 1155627542}
   m_Father: {fileID: 1549832713}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7446,6 +7447,80 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &745631057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 745631058}
+  - component: {fileID: 745631060}
+  - component: {fileID: 745631061}
+  m_Layer: 0
+  m_Name: Jalan Buntu
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &745631058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745631057}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.5, y: 26, z: 0}
+  m_LocalScale: {x: 1, y: 4, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 774724549}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &745631060
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745631057}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &745631061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745631057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852fab2a6ef0fa644b3299d93ade85b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: 5e415aa80dcf498499ca5e732e0e1c87, type: 2}
+  isAutoInteract: 1
+  isDestoryAfterInteract: 0
 --- !u!1 &758198549
 GameObject:
   m_ObjectHideFlags: 0
@@ -7614,6 +7689,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &774724548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 774724549}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &774724549
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774724548}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 290721967}
+  - {fileID: 745631058}
+  m_Father: {fileID: 1960995019}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &782540261
 GameObject:
   m_ObjectHideFlags: 0
@@ -11921,6 +12029,80 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1155627541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1155627542}
+  - component: {fileID: 1155627543}
+  - component: {fileID: 1155627544}
+  m_Layer: 0
+  m_Name: Captured Trigger
+  m_TagString: CaptureTrigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1155627542
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155627541}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 52.5, y: 3.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 387286653}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1155627543
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155627541}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1155627544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155627541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 852fab2a6ef0fa644b3299d93ade85b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: 83a3b10115609904786301000c70f9fe, type: 2}
+  isAutoInteract: 1
+  isDestoryAfterInteract: 1
 --- !u!1 &1157999904
 GameObject:
   m_ObjectHideFlags: 0
@@ -74292,9 +74474,81 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1386885539}
     - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
       propertyPath: theMission.Array.data[0].npcTotal
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[1].npcTotal
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[0].objective
+      value: Cari desa, lalu minta bantuan
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[1].objective
+      value: Lepaskan dirimu (dengan tekan Z berulang kali)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[2].objective
+      value: Kalahkan 3 musuh yang masuk didesa
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[2].enemyTotal
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[0].missionName
+      value: Cari Bantuan di desa
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[1].escapeTotal
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[1].missionName
+      value: Melepaskan diri
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[2].missionName
+      value: Kalahkan musuh didesa
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[1].objectiveType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[2].objectiveType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[0].closedDoor.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[1].closedDoor.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[2].closedDoor.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[0].closedDoor.Array.data[0]
+      value: 
+      objectReference: {fileID: 745631057}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[1].closedDoor.Array.data[0]
+      value: 
+      objectReference: {fileID: 745631057}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[2].closedDoor.Array.data[0]
+      value: 
+      objectReference: {fileID: 745631057}
     - target: {fileID: 3767227781580339540, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
       propertyPath: m_Name
       value: Mission Manager
@@ -75136,7 +75390,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1802525975}
   m_Layer: 0
-  m_Name: Village Inside Pos (1)
+  m_Name: Tertangkap Pos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75150,7 +75404,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802525974}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.5, y: -2.5, z: 0}
+  m_LocalPosition: {x: 52.5, y: 3.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -76347,11 +76601,11 @@ PrefabInstance:
     - target: {fileID: 3647411481290525737, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: 11400000, guid: e60390a4bc98b6847bf333d2b933cf99, type: 2}
     - target: {fileID: 3647411481290525737, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+      objectReference: {fileID: -1679896872465007704, guid: e60390a4bc98b6847bf333d2b933cf99, type: 2}
     - target: {fileID: 4522445955174710797, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -76559,6 +76813,14 @@ PrefabInstance:
     - target: {fileID: 8186808155768134236, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186808155773942269, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
+      propertyPath: dlgReference
+      value: 
+      objectReference: {fileID: 11400000, guid: aa8c634851d8ba84da49b87dfc675107, type: 2}
+    - target: {fileID: 8186808155773942269, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
+      propertyPath: isStartWhenPlay
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8212029420988145216, guid: 4a6fb93d894a6d9498fe1b23554645c5, type: 3}
       propertyPath: m_AnchorMax.x
@@ -76953,6 +77215,7 @@ Transform:
   m_Children:
   - {fileID: 1024064517}
   - {fileID: 784752543}
+  - {fileID: 774724549}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -742,7 +742,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: NO REFERENCE
+  m_text: Ini adalah deskripsi misi, jika teks ini muncul harusnya ada error
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e60390a4bc98b6847bf333d2b933cf99, type: 2}
   m_sharedMaterial: {fileID: -1679896872465007704, guid: e60390a4bc98b6847bf333d2b933cf99, type: 2}
@@ -805,7 +805,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 24, y: 0, z: 24, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

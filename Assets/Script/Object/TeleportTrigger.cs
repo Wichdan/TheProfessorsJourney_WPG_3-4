@@ -5,7 +5,7 @@ using UnityEngine;
 public class TeleportTrigger : MonoBehaviour
 {
     [SerializeField] Transform tpLocation;
-    [SerializeField] bool isCamFocus;
+    [SerializeField] bool isCamFocus, isDestoryAfterInteract;
     [SerializeField] PolygonCollider2D boundingBox;
     Cinemachine.CinemachineConfiner vmCam;
     private void Start()
@@ -17,6 +17,8 @@ public class TeleportTrigger : MonoBehaviour
     {
         if(!isCamFocus) return;
         vmCam.m_BoundingShape2D = boundingBox;
+        if(isDestoryAfterInteract)
+            Destroy(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -25,6 +27,8 @@ public class TeleportTrigger : MonoBehaviour
         {
             other.gameObject.transform.position = tpLocation.transform.position;
             ChangeCameraFocus();
+            if(isDestoryAfterInteract)
+                Destroy(gameObject);
         }
     }
 }

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cd9b29d575fe4424290009b0a8f3b6d7, type: 3}
-  m_Name: Cutscene 1
+  m_Name: Cutscene Start Game
   m_EditorClassIdentifier: 
   conversation:
   - charName: 

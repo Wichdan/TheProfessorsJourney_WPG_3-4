@@ -25,6 +25,7 @@ public class BattleManager : MonoBehaviour
     public void StartBattle()
     {
         cinemachine.Follow = camFocus[arenaID];
+        cinemachine.m_Lens.OrthographicSize = 7;
         battleArena[arenaID].SetActive(true);
         player.transform.position = camFocus[arenaID].position;
     }
@@ -34,6 +35,7 @@ public class BattleManager : MonoBehaviour
         {
             battleArena[i].SetActive(false);
         }
+        cinemachine.m_Lens.OrthographicSize = 5;
     }
 
     public void SetArenaID(int id) => arenaID = id;

@@ -19,17 +19,25 @@ public class Player : MonoBehaviour
     public bool isCaptured = false;
     [SerializeField] int releaseValue = 0, maxRelease = 6;
 
+    [Header("Regen HP")]
+    [SerializeField] float timeToRegen = 3f;
+    float tempT;
+
+
     [Header("Reference")]
     Rigidbody2D rb;
     Animator anim;
     Character stats;
     PlayerCombat playerCombat;
-    private void Awake()
+
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         stats = GetComponent<Character>();
         playerCombat = GetComponent<PlayerCombat>();
+
+        tempT = timeToRegen;
     }
 
     private void Update()
@@ -44,6 +52,7 @@ public class Player : MonoBehaviour
 
         stats.Stamina = Regenerate(stats.Stamina, stats.MaxStamina, 1f);
         stats.Mana = Regenerate(stats.Mana, stats.MaxMana, 1f);
+        RegenerateHP();
     }
 
     bool flipCondition(bool condition)
@@ -145,6 +154,15 @@ public class Player : MonoBehaviour
             value += Time.deltaTime * time;
 
         return value;
+    }
+
+    void RegenerateHP()
+    {
+        timeToRegen -= Time.deltaTime;
+        if(timeToRegen <= 0){
+            timeToRegen = tempT;
+            stats.Heal(5);
+        }
     }
 
     void WhenCaptured()

@@ -220,7 +220,10 @@ public class Character : MonoBehaviour
 
     public void Heal(int _heal)
     {
-        if (healthPoints >= maxHealthPoints) return;
+        if (healthPoints >= maxHealthPoints){
+            healthPoints = maxHealthPoints;
+            return;
+        }
         healthPoints += _heal;
 	}
 

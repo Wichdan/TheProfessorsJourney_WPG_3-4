@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9b29d575fe4424290009b0a8f3b6d7, type: 3}
+  m_Name: Cari kabur
+  m_EditorClassIdentifier: 
+  conversation:
+  - charName: 
+    leftPortrait: {fileID: 0}
+    rightPortrait: {fileID: 0}
+    sentence: <color=white>Ia pun langsung di bawa ke desa dengan tangan yang diikat
+      oleh tali tambang. Para penduduk melihat sang profesor dengan tatapan yang
+      penuh akan kebencian. Di saat akan membawa profesor ke (penjara), mereka diinterupsi
+      oleh suara trompet yang sangat kencang.
+    isNarrator: 1
+    dlgBGIndex: 0
+    dontUseHolderBG: 1
+  - charName: 
+    leftPortrait: {fileID: 0}
+    rightPortrait: {fileID: 0}
+    sentence: <color=white>Nampaknya bangsa Jotunheim menyerang desa sang bangsa
+      Viking. Semua penduduk pun mulai panik dan membentuk pertahanan. Para wanita
+      dan anak-anak dievakuasi ke salah satu rumah yang berada di sana, sementara
+      para pria bersiap-siap untuk perang.
+    isNarrator: 1
+    dlgBGIndex: 0
+    dontUseHolderBG: 1
+  - charName: 
+    leftPortrait: {fileID: 0}
+    rightPortrait: {fileID: 0}
+    sentence: <color=white>Di depan terlihat 3 buah raksasa besar yang berwujud Golem
+      berdatangan ke arah desa. Karena sedang dalam keadaan darurat, akhirnya sang
+      profesor hanya di tali ke sebuah tiang.
+    isNarrator: 1
+    dlgBGIndex: 0
+    dontUseHolderBG: 1
+  - charName: 
+    leftPortrait: {fileID: 0}
+    rightPortrait: {fileID: 0}
+    sentence: <color=white>Di depan terlihat 3 buah raksasa besar yang berwujud Golem
+      berdatangan ke arah desa. Karena sedang dalam keadaan darurat, akhirnya sang
+      profesor hanya di tali ke sebuah tiang.
+    isNarrator: 1
+    dlgBGIndex: 0
+    dontUseHolderBG: 1
+  - charName: 
+    leftPortrait: {fileID: 0}
+    rightPortrait: {fileID: 0}
+    sentence: Ketika dalam kondiri yang diikat di sebuah tiang sang professor pun
+      berusaha meloloskan diri dari jeratan tali tersebut. Professor berusaha sekuat
+      tenaga melepaskan ikatan tali pada tangannya namun usahanya itu tak membuahkan
+      hasil.
+    isNarrator: 1
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: 
+    leftPortrait: {fileID: 0}
+    rightPortrait: {fileID: 0}
+    sentence: Setelah begitu lama sang professor berusaha untuk melepaskan ikatan
+      pada tanganya itu professor teringat akan suatu hal yaitu di dalam kantong
+      belakang celananya terdapat pisau lipat yang selalu ia bawa kemanapun.
+    isNarrator: 1
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kamu
+    leftPortrait: {fileID: 0}
+    rightPortrait: {fileID: 0}
+    sentence: Aku rasa aku membawa pisau lipat yang ada dikantongku dan pisau itu
+      akan menyelamatkanku.
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  dialogueBackgrounds:
+  - {fileID: 21300000, guid: 5b25134c0de30584bb6f6a645b06558c, type: 3}
+  isCanSkip: 1
+  isGetSomething: 0
+  getSomething:
+    updateMission: 0

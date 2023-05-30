@@ -64,6 +64,7 @@ public class PlayerCombat : MonoBehaviour
         if (stats.Stamina - weaponSlot[selectedIndex].staminaCost <= 0) return;
         if (Input.GetKeyDown(KeyCode.X) && !stats.IsAttack && !stats.IsStun)
         {
+            MusicManager.singleton.SetAndPlaySFX(weaponSlot[selectedIndex].sfx);
             stats.Attacking();
             weaponAnim.SetTrigger("attack");
             stats.DecreaseStamina(weaponSlot[selectedIndex].staminaCost);

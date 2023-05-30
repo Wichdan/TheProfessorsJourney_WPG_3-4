@@ -16,4 +16,5 @@ public class Weapon : ScriptableObject
     public AttackType weaponType;
     public GameObject projectile;
     public Sprite weaponIcon;
+    public AudioClip sfx;
 }

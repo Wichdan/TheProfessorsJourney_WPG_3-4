@@ -35,6 +35,7 @@ public class DialogueManager : MonoBehaviour
             StartDialogue();
             player.isInteracting = true;
         }
+        MusicManager.singleton.SetAndPlayBGM(1);
     }
 
     private void Update()

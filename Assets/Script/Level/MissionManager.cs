@@ -114,7 +114,7 @@ public class MissionManager : MonoBehaviour
     {
         if (missionIndex >= theMission.Count - 1)
         {
-            UIManager.instance.UpdateObjectiveText("All Clear!");
+            UIManager.instance.UpdateObjectiveText("Semua selesai, tinggal cari jalan keluar (dari level)");
             return;
         }
         missionIndex++;

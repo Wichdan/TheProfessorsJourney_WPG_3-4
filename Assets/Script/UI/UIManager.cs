@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -80,12 +81,18 @@ public class UIManager : MonoBehaviour
         isPaused = false;
     }
 
+    public void ChangeScene(int index)
+    {
+        SceneManager.LoadScene(index);
+    }
+
     public void SetWeaponIcon(Sprite sprite)
     {
         weaponIcon.sprite = sprite;
     }
 
-    public void UpdateObjectiveText(string objective){
+    public void UpdateObjectiveText(string objective)
+    {
         objectiveText.text = objective;
     }
 }

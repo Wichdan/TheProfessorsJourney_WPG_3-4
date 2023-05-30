@@ -22,3 +22,4 @@ MonoBehaviour:
   weaponType: 0
   projectile: {fileID: 0}
   weaponIcon: {fileID: 21300000, guid: 541408fddc03f7546939c4d90c0223e4, type: 3}
+  sfx: {fileID: 8300000, guid: c200b4cf8ebe5d54c9ce6185d0fd5272, type: 3}

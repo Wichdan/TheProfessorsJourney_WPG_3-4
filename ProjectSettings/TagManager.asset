@@ -12,6 +12,7 @@ TagManager:
   - PlayerCollision
   - EnemyWorld
   - CaptureTrigger
+  - MusicManager
   layers:
   - Default
   - TransparentFX

@@ -436,13 +436,14 @@ MonoBehaviour:
   tempMove: {x: 0, y: 1}
   dodgeCD: 0.5
   dodgeStaminaCost: 5
+  dodgeSfx: {fileID: 8300000, guid: 867e0eea1c8747e4095af3cb714d0cc0, type: 3}
   isInteract: 0
   isInteracting: 0
   isCanInteract: 0
   isCaptured: 0
   releaseValue: 0
   maxRelease: 6
-  dialogueTrigger: {fileID: 0}
+  timeToRegen: 3
 --- !u!114 &1704258200004475276
 MonoBehaviour:
   m_ObjectHideFlags: 0

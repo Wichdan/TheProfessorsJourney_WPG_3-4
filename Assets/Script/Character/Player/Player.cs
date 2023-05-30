@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
     [Header("Dodge")]
     [SerializeField] float dodgeCD = 0.5f;
     [SerializeField] float dodgeStaminaCost = 5f;
+    [SerializeField] AudioClip dodgeSfx;
 
     [Header("Condition")]
     public bool isInteract;
@@ -52,7 +53,9 @@ public class Player : MonoBehaviour
 
         stats.Stamina = Regenerate(stats.Stamina, stats.MaxStamina, 1f);
         stats.Mana = Regenerate(stats.Mana, stats.MaxMana, 1f);
-        RegenerateHP();
+
+        if(!stats.IsMove)
+            RegenerateHP();
     }
 
     bool flipCondition(bool condition)
@@ -114,6 +117,7 @@ public class Player : MonoBehaviour
             anim.SetBool("isDodge", stats.IsDodge);
             StartCoroutine(DisableDodge());
             stats.DecreaseStamina(dodgeStaminaCost);
+            MusicManager.singleton.SetAndPlaySFX(dodgeSfx);
         }
     }
 

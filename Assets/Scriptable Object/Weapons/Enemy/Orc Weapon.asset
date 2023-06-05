@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theWeapon: {fileID: 5799471830387371543, guid: be9c8771aaf249e448ece0019b27d5ca, type: 3}
   weaponName: Orc weapon
-  radius: 1
+  radius: 0.6
   bonusAttack: 30
   attackSpeed: 0.5
   staminaCost: 2

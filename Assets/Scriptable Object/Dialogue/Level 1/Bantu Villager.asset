@@ -16,23 +16,23 @@ MonoBehaviour:
   - charName: 
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
-    sentence: '*Kamu mendengar suara penduduk desa yang sedang bertarung musuh, mereka
-      tampaknya kuwalahan*'
+    sentence: Kamu mendengar suara penduduk desa yang sedang bertarung dengan bangsa
+      Jotunheim tadi,
     isNarrator: 1
     dlgBGIndex: -1
     dontUseHolderBG: 0
   - charName: Kamu
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
-    sentence: Apakah aku harus membentu melawan bangsa itu atau aku harus menyelamatkan
-      diriku?
+    sentence: "mereka semua nampaknya kewalahan menahan serangan dari\_sang\_Jotun"
     isNarrator: 1
     dlgBGIndex: -1
     dontUseHolderBG: 0
   - charName: 
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
-    sentence: Karena memilih untuk menyelamatkan penduduk desa
+    sentence: Apakah aku harus membentu melawan bangsa itu atau aku harus menyelamatkan
+      diriku?
     isNarrator: 1
     dlgBGIndex: -1
     dontUseHolderBG: 0

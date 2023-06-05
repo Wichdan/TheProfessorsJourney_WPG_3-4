@@ -55,9 +55,9 @@ MonoBehaviour:
   - charName: 
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
-    sentence: <color=white>bangsa viking pun merasa risi dengan teriakan keluar mulut
-      dari professor hingga akhirnya salah satu bangsa viking merobek sedikit kain
-      baju yang dikenakan untuk mengukat mulut professor.
+    sentence: "<color=white>Bangsa Viking pun merasa risih oleh teriakan yang keluar
+      dari mulut Professor, hingga akhirnya salah satu dari mereka merobek sedikit
+      kain bajunya untuk mengikat\_mulut\_professor"
     isNarrator: 1
     dlgBGIndex: 0
     dontUseHolderBG: 1

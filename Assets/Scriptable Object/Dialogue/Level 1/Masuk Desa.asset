@@ -16,7 +16,7 @@ MonoBehaviour:
   - charName: 
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
-    sentence: <color=white>Kamu memasuk desa
+    sentence: <color=white>Kamu memasuki desa
     isNarrator: 1
     dlgBGIndex: 0
     dontUseHolderBG: 1

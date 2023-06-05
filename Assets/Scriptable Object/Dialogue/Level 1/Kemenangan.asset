@@ -16,21 +16,160 @@ MonoBehaviour:
   - charName: Kepala Desa
     leftPortrait: {fileID: 21300000, guid: ccef97b93210bfc47a12b2d67e73dc76, type: 3}
     rightPortrait: {fileID: 0}
-    sentence: Terima kasih
+    sentence: '#//###/####//#'
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kamu
+    leftPortrait: {fileID: 0}
+    rightPortrait: {fileID: 0}
+    sentence: Tunggu, jangan.... Aku bermaksud baik!!
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kamu
+    leftPortrait: {fileID: 0}
+    rightPortrait: {fileID: 0}
+    sentence: Tunggu, jangan.... Aku bermaksud baik!!
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kamu
+    leftPortrait: {fileID: 0}
+    rightPortrait: {fileID: 0}
+    sentence: Huh, kalian... menyorakkan Aku?
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kamu
+    leftPortrait: {fileID: 0}
+    rightPortrait: {fileID: 0}
+    sentence: Sebentar, aku akan mengambil alat penerjemahku
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kamu
+    leftPortrait: {fileID: 0}
+    rightPortrait: {fileID: 0}
+    sentence: Ini makan ini, ini bisa membuatmu mengerti bahasaku dan kita bisa saling
+      berkomunikasi
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kamu
+    leftPortrait: {fileID: 0}
+    rightPortrait: {fileID: 0}
+    sentence: Ini makan ini, ini bisa membuatmu mengerti bahasaku dan kita bisa saling
+      berkomunikasi
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kepala Desa
+    leftPortrait: {fileID: 21300000, guid: ccef97b93210bfc47a12b2d67e73dc76, type: 3}
+    rightPortrait: {fileID: 0}
+    sentence: '###//######//#/////'
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kepala Desa
+    leftPortrait: {fileID: 21300000, guid: ccef97b93210bfc47a12b2d67e73dc76, type: 3}
+    rightPortrait: {fileID: 0}
+    sentence: Terimakasih, apa yang kamu perbuat telah membantu kita untuk mengalahkan
+      monster tersebut
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kepala Desa
+    leftPortrait: {fileID: 21300000, guid: ccef97b93210bfc47a12b2d67e73dc76, type: 3}
+    rightPortrait: {fileID: 0}
+    sentence: Ngomong-ngomong, apa tujuanmu untuk pergi ke desa kami ini?
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kamu
+    leftPortrait: {fileID: 0}
+    rightPortrait: {fileID: 0}
+    sentence: Aku sedang mencari bantuan, ini semua karena alatku penemuanku yang
+      rusak tersebut
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kepala Desa
+    leftPortrait: {fileID: 21300000, guid: ccef97b93210bfc47a12b2d67e73dc76, type: 3}
+    rightPortrait: {fileID: 0}
+    sentence: 'Hm.... alat ini sangat aneh. Sepertinya kami tidak bisa membetulkannya,
+      Aku yakin bangsa Dwarf bisa membetulkan alat tersebut
+
+'
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kepala Desa
+    leftPortrait: {fileID: 21300000, guid: ccef97b93210bfc47a12b2d67e73dc76, type: 3}
+    rightPortrait: {fileID: 0}
+    sentence: Mereka tinggal di dalam pegunungan yang dijaga oleh berbagai monster
+      mengerikan, jadi untuk sementara waktu,
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kepala Desa
+    leftPortrait: {fileID: 21300000, guid: ccef97b93210bfc47a12b2d67e73dc76, type: 3}
+    rightPortrait: {fileID: 0}
+    sentence: apakah kau ingin berlatih bertarung bersama kami terlebih dahulu?
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kamu
+    leftPortrait: {fileID: 21300000, guid: ccef97b93210bfc47a12b2d67e73dc76, type: 3}
+    rightPortrait: {fileID: 0}
+    sentence: Tentu, Aku akan berlatih bertarung bersama kalian untuk seminggu kedepan
     isNarrator: 0
     dlgBGIndex: -1
     dontUseHolderBG: 0
   - charName: 
-    leftPortrait: {fileID: 21300000, guid: ccef97b93210bfc47a12b2d67e73dc76, type: 3}
+    leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
-    sentence: <color=white> ini berlatih
-    isNarrator: 1
+    sentence: '<color=white>*Professor berlatih bersama para Bangsa Viking untuk
+      meningkatkan kemampuan bertarungnya*
+
+'
+    isNarrator: 0
     dlgBGIndex: 0
     dontUseHolderBG: 1
+  - charName: Kepala Desa
+    leftPortrait: {fileID: 21300000, guid: ccef97b93210bfc47a12b2d67e73dc76, type: 3}
+    rightPortrait: {fileID: 0}
+    sentence: Nampaknya kau sudah terampil dalam bertarung
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kepala Desa
+    leftPortrait: {fileID: 21300000, guid: ccef97b93210bfc47a12b2d67e73dc76, type: 3}
+    rightPortrait: {fileID: 0}
+    sentence: Batu kekuatan yang kuberikan sebelumnya dinamakan Rune.
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kepala Desa
+    leftPortrait: {fileID: 21300000, guid: ccef97b93210bfc47a12b2d67e73dc76, type: 3}
+    rightPortrait: {fileID: 0}
+    sentence: Rune ini dapat mengeluarkan kekuatan sesuai dengan tipe rune tersebut
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
+  - charName: Kepala Desa
+    leftPortrait: {fileID: 21300000, guid: ccef97b93210bfc47a12b2d67e73dc76, type: 3}
+    rightPortrait: {fileID: 0}
+    sentence: Gunakanlah rune ini secara hati-hati, karena beberapa dari mereka dapat
+      mencelakakan penggunanya
+    isNarrator: 0
+    dlgBGIndex: -1
+    dontUseHolderBG: 0
   - charName: Kamu
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
-    sentence: Aku pergi dulu
+    sentence: "Baik, terimakasih atas informasinya, sekarang ijinkan Aku untuk pergi
+      ke para Dwarf\_terlebih\_dahulu"
     isNarrator: 0
     dlgBGIndex: -1
     dontUseHolderBG: 0

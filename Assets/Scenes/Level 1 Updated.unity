@@ -1295,7 +1295,7 @@ GameObject:
   m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &112647389
 Transform:
   m_ObjectHideFlags: 0
@@ -3318,7 +3318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue: {fileID: 11400000, guid: 4e33c7b2e4659fe4f81427a6ba4a4498, type: 2}
   isAutoInteract: 1
-  isDestoryAfterInteract: 1
+  isDestoryAfterInteract: 0
 --- !u!1 &292594791
 GameObject:
   m_ObjectHideFlags: 0
@@ -75338,7 +75338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
       propertyPath: theMission.Array.data[1].closedDoor.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
       propertyPath: theMission.Array.data[2].closedDoor.Array.size
@@ -75350,7 +75350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
       propertyPath: theMission.Array.data[4].closedDoor.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
       propertyPath: theMission.Array.data[0].closedDoor.Array.data[0]
@@ -75361,9 +75361,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1190689928}
     - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
+      propertyPath: theMission.Array.data[0].closedDoor.Array.data[2]
+      value: 
+      objectReference: {fileID: 112647388}
+    - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
       propertyPath: theMission.Array.data[1].closedDoor.Array.data[0]
       value: 
-      objectReference: {fileID: 568107226}
+      objectReference: {fileID: 112647388}
     - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
       propertyPath: theMission.Array.data[2].closedDoor.Array.data[0]
       value: 
@@ -75379,7 +75383,7 @@ PrefabInstance:
     - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
       propertyPath: theMission.Array.data[3].closedDoor.Array.data[1]
       value: 
-      objectReference: {fileID: 290721965}
+      objectReference: {fileID: 112647388}
     - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
       propertyPath: theMission.Array.data[4].closedDoor.Array.data[0]
       value: 
@@ -76697,6 +76701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1819096986}
   - component: {fileID: 1819096987}
+  - component: {fileID: 1819096988}
   m_Layer: 0
   m_Name: Tree_3 (15)
   m_TagString: Untagged
@@ -76771,6 +76776,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &1819096988
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819096985}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3.085
 --- !u!1001 &1822425389
 PrefabInstance:
   m_ObjectHideFlags: 0

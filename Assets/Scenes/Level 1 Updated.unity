@@ -75350,7 +75350,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
       propertyPath: theMission.Array.data[4].closedDoor.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3767227781580339538, guid: 90bfdb10d00bc5c4a90a7a6a88cb06ea, type: 3}
       propertyPath: theMission.Array.data[0].closedDoor.Array.data[0]

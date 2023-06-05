@@ -30,13 +30,6 @@ MonoBehaviour:
   - charName: Kamu
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
-    sentence: Tunggu, jangan.... Aku bermaksud baik!!
-    isNarrator: 0
-    dlgBGIndex: -1
-    dontUseHolderBG: 0
-  - charName: Kamu
-    leftPortrait: {fileID: 0}
-    rightPortrait: {fileID: 0}
     sentence: Huh, kalian... menyorakkan Aku?
     isNarrator: 0
     dlgBGIndex: -1
@@ -139,7 +132,8 @@ MonoBehaviour:
   - charName: Kepala Desa
     leftPortrait: {fileID: 21300000, guid: ccef97b93210bfc47a12b2d67e73dc76, type: 3}
     rightPortrait: {fileID: 0}
-    sentence: Nampaknya kau sudah terampil dalam bertarung
+    sentence: "Nampaknya kau sudah terampil dalam bertarung. Omong-omong ini kuberi
+      kau batu kekuatan untuk\_membantumu"
     isNarrator: 0
     dlgBGIndex: -1
     dontUseHolderBG: 0

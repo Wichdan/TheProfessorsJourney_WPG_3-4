@@ -12669,6 +12669,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: green slime (World)
       objectReference: {fileID: 0}
+    - target: {fileID: 7825426688206876314, guid: 0e6a02f6dcdd6f545b47b37214d07031, type: 3}
+      propertyPath: isPatrol
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7825426688206876319, guid: 0e6a02f6dcdd6f545b47b37214d07031, type: 3}
       propertyPath: m_RootOrder
       value: 12

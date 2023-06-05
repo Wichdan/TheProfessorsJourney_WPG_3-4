@@ -10,11 +10,19 @@ public class MusicManager : MonoBehaviour
 
     [SerializeField] List<AudioClip> bgMusics;
 
-    public static MusicManager singleton;
+    public static MusicManager instance;
 
     private void Awake()
     {
-        singleton = this;
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
+        DontDestroyOnLoad(gameObject);
     }
 
     public void ApplyBGMVolume(Slider slider) => bgMusic.volume = slider.value;

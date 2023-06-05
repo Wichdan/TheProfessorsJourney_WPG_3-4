@@ -35,7 +35,9 @@ public class DialogueManager : MonoBehaviour
             StartDialogue();
             player.isInteracting = true;
         }
-        MusicManager.singleton.SetAndPlayBGM(1);
+
+        if (MusicManager.instance != null)
+            MusicManager.instance.SetAndPlayBGM(1);
     }
 
     private void Update()
@@ -129,6 +131,7 @@ public class DialogueManager : MonoBehaviour
             dlgBG.enabled = false;
     }
 
+    /*
     public void ShowMessageDialogue(string getSomething)
     {
         player.isInteracting = true;
@@ -165,7 +168,7 @@ public class DialogueManager : MonoBehaviour
         skipDialogue.SetActive(dlgReference.isCanSkip);
         StartCoroutine(DialogueAnimation());
     }
-
+*/
     void NextDialogue()
     {
         index++;

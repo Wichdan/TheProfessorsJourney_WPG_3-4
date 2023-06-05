@@ -11,20 +11,20 @@ public class OptionManager : MonoBehaviour
 
     private void Start()
     {
-        MusicManager.singleton.SetBGMSliderValue(musicSlider);
-        MusicManager.singleton.SetSFXSliderValue(sfxSlider);
+        MusicManager.instance.SetBGMSliderValue(musicSlider);
+        MusicManager.instance.SetSFXSliderValue(sfxSlider);
 
         saveBtn.onClick.AddListener(() =>
         {
-            MusicManager.singleton.ApplyBGMVolume(musicSlider);
-            MusicManager.singleton.ApplySFXVolume(sfxSlider);
+            MusicManager.instance.ApplyBGMVolume(musicSlider);
+            MusicManager.instance.ApplySFXVolume(sfxSlider);
         });
 
         resetBtn.onClick.AddListener(() =>
         {
-            MusicManager.singleton.ResetVolume();
-            MusicManager.singleton.SetBGMSliderValue(musicSlider);
-            MusicManager.singleton.SetSFXSliderValue(sfxSlider);
+            MusicManager.instance.ResetVolume();
+            MusicManager.instance.SetBGMSliderValue(musicSlider);
+            MusicManager.instance.SetSFXSliderValue(sfxSlider);
         });
     }
 }

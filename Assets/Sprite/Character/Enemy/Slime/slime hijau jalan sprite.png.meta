@@ -1,0 +1,707 @@
+fileFormatVersion: 2
+guid: 919036a8144433047a0b953050975c0e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1325
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0576c93b14a38344fa169289a98e7d47
+      internalID: -1488584688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_1
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1325
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0e29ca3f62ea347bb70f7614131eac
+      internalID: 1142472312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_2
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1325
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0493397d0eb629045b5ce3028f35f346
+      internalID: 563694313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_3
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 1325
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eda8f2763443c445ab1d03874fe4235
+      internalID: 899366909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_4
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 1325
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4672f7489ffcfee44811b51ad6eb7984
+      internalID: -373191868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1060
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f40e38317c17ff46ae171bb19b487aa
+      internalID: -1468594050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_6
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1060
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86883cd167752f94d8f64fcbc7d5caf7
+      internalID: -1833901229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_7
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 1060
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c20471cab6fbad40885e34509fec049
+      internalID: 507191287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_8
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 1060
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53bf653a399f257439883b9c1da49a24
+      internalID: -178348092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_9
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 1060
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a90813a2f4dae44ae38adb77e5ec45
+      internalID: 1367973938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 795
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604ccb5d7a41c174484daaceda9f301e
+      internalID: -626303056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_11
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 795
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1c9f04b6cd0594e84a47d5003cc45e
+      internalID: 1620182382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_12
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 795
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c7cb0f8922b9940b1f38c45e98440d
+      internalID: -210354972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_13
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 795
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faaaa94449461d44cb03df2093064be9
+      internalID: 1508056050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_14
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 795
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c896989c39f5a8746ae35a65b65c4c70
+      internalID: 976958922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 530
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac603ae18e38df4786ba26034279c81
+      internalID: 673422112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_16
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 530
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb298bc36392d574e817820db74f8fcd
+      internalID: 1766063421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_17
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 530
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd16a9d834a5ad47a66c124206ea635
+      internalID: -1240355216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_18
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 530
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5448553aa7c41c1479db32d1e31b08e2
+      internalID: -960374986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_19
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 530
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d322709cc39611849b7c37c6adc9f84d
+      internalID: -1661707358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 265
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fb923bfd90246458f1b47c21d689fb
+      internalID: 1569331916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_21
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 265
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea14cb151bb8b04491b7584635eb07f
+      internalID: -1433462798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_22
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 265
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8f6dc8c4fb58d48afb7ec4c5fcb544
+      internalID: 1964422231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_23
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 265
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2398f8ab6a84f6f40bb9392d8362cdb6
+      internalID: 2087498788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_24
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 265
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc64f6dd84b02f848a34be938b331edb
+      internalID: -597194119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime hijau jalan sprite_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 381
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2053d86606eedcc49bacbec093d1038d
+      internalID: -562592330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      slime hijau jalan sprite_22: 1964422231
+      slime hijau jalan sprite_5: -1468594050
+      slime hijau jalan sprite_8: -178348092
+      slime hijau jalan sprite_16: 1766063421
+      slime hijau jalan sprite_4: -373191868
+      slime hijau jalan sprite_21: -1433462798
+      slime hijau jalan sprite_24: -597194119
+      slime hijau jalan sprite_9: 1367973938
+      slime hijau jalan sprite_15: 673422112
+      slime hijau jalan sprite_25: -562592330
+      slime hijau jalan sprite_23: 2087498788
+      slime hijau jalan sprite_2: 563694313
+      slime hijau jalan sprite_17: -1240355216
+      slime hijau jalan sprite_1: 1142472312
+      slime hijau jalan sprite_7: 507191287
+      slime hijau jalan sprite_6: -1833901229
+      slime hijau jalan sprite_0: -1488584688
+      slime hijau jalan sprite_10: -626303056
+      slime hijau jalan sprite_18: -960374986
+      slime hijau jalan sprite_13: 1508056050
+      slime hijau jalan sprite_3: 899366909
+      slime hijau jalan sprite_19: -1661707358
+      slime hijau jalan sprite_20: 1569331916
+      slime hijau jalan sprite_14: 976958922
+      slime hijau jalan sprite_11: 1620182382
+      slime hijau jalan sprite_12: -210354972
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

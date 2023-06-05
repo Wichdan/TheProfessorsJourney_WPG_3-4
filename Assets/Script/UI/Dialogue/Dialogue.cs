@@ -12,6 +12,18 @@ public class Dialogue : ScriptableObject
     public GetSomething getSomething;
 
     [System.Serializable]
+    public struct Conversation
+    {
+        public string charName;
+        public Sprite leftPortrait, rightPortrait;
+        [TextArea(1, 3)]
+        public string sentence;
+        public bool isNarrator;
+        public int dlgBGIndex;
+        public bool dontUseHolderBG;
+    }
+
+    [System.Serializable]
     public struct GetSomething
     {
         //public Weapon weapon;
@@ -19,14 +31,4 @@ public class Dialogue : ScriptableObject
     }
 }
 
-[System.Serializable]
-public class Conversation
-{
-    public string charName;
-    public Sprite leftPortrait, rightPortrait;
-    [TextArea(1, 3)]
-    public string sentence;
-    public bool isNarrator;
-    public int dlgBGIndex = -1;
-    public bool dontUseHolderBG;
-}
+

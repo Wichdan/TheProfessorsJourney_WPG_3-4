@@ -21,6 +21,11 @@ public class Enemy : MonoBehaviour
 
     [Header("Weapon")]
     [SerializeField] Weapon weapon;
+    [SerializeField] bool weaponItself;
+    [SerializeField] int selfBonusAtk;
+    [SerializeField] float selfBonusAtkSpd;
+    [SerializeField] Vector2 dodgePos;
+    [SerializeField] float dodgeTime;
 
     [Header("Reference")]
     Animator charAnim, weaponAnim;
@@ -31,7 +36,19 @@ public class Enemy : MonoBehaviour
     [SerializeField] Collider2D feetCollider;
     [SerializeField] bool isMission;
 
-    private void Awake()
+    public bool IsMission { get => isMission; set => isMission = value; }
+
+    private void Reset()
+    {
+        selfBonusAtk = 1;
+        selfBonusAtkSpd = 1f;
+        if (weaponItself)
+            atkPoint = transform;
+
+        dodgeTime = 0.3f;
+    }
+
+    private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         charAnim = GetComponent<Animator>();
@@ -51,16 +68,26 @@ public class Enemy : MonoBehaviour
             stats.Attack += weapon.bonusAttack;
             stats.AttackSpeed -= weapon.attackSpeed;
         }
+        else if (weaponItself)
+        {
+            stats.Attack += selfBonusAtk;
+            stats.AttackSpeed += selfBonusAtkSpd = 0;
+            atkPoint = transform;
+        }
 
         tempPatrolCD = partrolDelay;
     }
 
     private void Update()
     {
-        if (stats.HealthPoint <= 0){
+        if (stats.HealthPoint <= 0)
+        {
             Destroy(gameObject);
-            if(isMission)
+            if (IsMission)
                 MissionManager.instance.AddEnemyCount(1);
+            
+            BattleManager.instance.UpdNumOfEnemy();
+            BattleManager.instance.FinishBattle();
         }
 
         FacingPlayer();
@@ -88,6 +115,10 @@ public class Enemy : MonoBehaviour
             rb.MovePosition(rb.position + movement * stats.MoveSpeed * Time.fixedDeltaTime);
         else if (!isPatrol && !isPatroling && isChase && stats.IsCanMove)
             rb.MovePosition(rb.position + chasePos * stats.MoveSpeed * Time.fixedDeltaTime);
+        else if (!isPatrol && !isPatroling && stats.IsDodge)
+        {
+            rb.MovePosition(rb.position + dodgePos * stats.DodgeSpeed * Time.fixedDeltaTime);
+        }
         else if (!isPatroling)
         {
             rb.velocity = new Vector2(0, 0);
@@ -139,8 +170,11 @@ public class Enemy : MonoBehaviour
 
             Vector2 weaponPos = new Vector2(Mathf.Round(chasePos.x), Mathf.Round(chasePos.y));
 
-            weaponAnim.SetFloat("moveX", weaponPos.x);
-            weaponAnim.SetFloat("moveY", weaponPos.y);
+            if (!weaponItself)
+            {
+                weaponAnim.SetFloat("moveX", weaponPos.x);
+                weaponAnim.SetFloat("moveY", weaponPos.y);
+            }
 
             charAnim.SetFloat("speed", chasePos.sqrMagnitude);
 
@@ -151,9 +185,16 @@ public class Enemy : MonoBehaviour
             isPatrol = true;
         }
 
-        if (distance <= 1.5 && !stats.IsAttack && !stats.IsStun)
+        if (distance <= 1.5 && !stats.IsAttack && !stats.IsStun && !weaponItself)
         {
             isChase = false;
+            Attack();
+        }
+        else if (distance <= 3 && !stats.IsAttack && !stats.IsStun && weaponItself)
+        {
+            isChase = false;
+            if (weaponItself)
+                Dodge();
             Attack();
         }
     }
@@ -161,9 +202,27 @@ public class Enemy : MonoBehaviour
     void Attack()
     {
         stats.Attacking();
-        weaponAnim.SetTrigger("attack");
+        if (!weaponItself)
+            weaponAnim.SetTrigger("attack");
         SpawnHitBox();
         stats.DisableMove();
+    }
+
+    void Dodge()
+    {
+        dodgePos = chasePos;
+        stats.IsDodge = true;
+        isChase = false;
+        stats.DisableMove();
+        StartCoroutine(DisableDodge());
+    }
+
+    IEnumerator DisableDodge()
+    {
+        yield return new WaitForSeconds(dodgeTime);
+        stats.IsDodge = false;
+        stats.IsCanMove = true;
+        isChase = true;
     }
 
     void SpawnHitBox()
@@ -177,4 +236,12 @@ public class Enemy : MonoBehaviour
     }
 
     void FlipPatrol() => isPatroling = !isPatroling;
+
+    private void OnDrawGizmos()
+    {
+        if (atkPoint != null)
+        {
+            Gizmos.DrawWireSphere(atkPoint.transform.position, radius);
+        }
+    }
 }

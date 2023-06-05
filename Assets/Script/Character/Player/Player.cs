@@ -43,18 +43,23 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        if (stats.HealthPoint <= 0 && !UIManager.instance.IsGameOver)
+        {
+            UIManager.instance.GameOver();
+            return;
+        }
+
         Move();
         Dodge();
         Interact();
         WhenCaptured();
-
         if (Input.GetKeyDown(KeyCode.P))
             stats.IsRegenHP = true;
 
         stats.Stamina = Regenerate(stats.Stamina, stats.MaxStamina, 1f);
         stats.Mana = Regenerate(stats.Mana, stats.MaxMana, 1f);
 
-        if(!stats.IsMove)
+        if (!stats.IsMove)
             RegenerateHP();
     }
 
@@ -117,7 +122,9 @@ public class Player : MonoBehaviour
             anim.SetBool("isDodge", stats.IsDodge);
             StartCoroutine(DisableDodge());
             stats.DecreaseStamina(dodgeStaminaCost);
-            MusicManager.singleton.SetAndPlaySFX(dodgeSfx);
+
+            if (MusicManager.instance != null)
+                MusicManager.instance.SetAndPlaySFX(dodgeSfx);
         }
     }
 
@@ -162,8 +169,10 @@ public class Player : MonoBehaviour
 
     void RegenerateHP()
     {
+        if (stats.HealthPoint > stats.MaxHealthPoints) return;
         timeToRegen -= Time.deltaTime;
-        if(timeToRegen <= 0){
+        if (timeToRegen <= 0)
+        {
             timeToRegen = tempT;
             stats.Heal(5);
         }

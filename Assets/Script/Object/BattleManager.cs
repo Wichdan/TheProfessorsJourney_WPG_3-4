@@ -5,6 +5,8 @@ using UnityEngine;
 public class BattleManager : MonoBehaviour
 {
     [SerializeField] int arenaID;
+    [SerializeField] int numOfEnemy;
+    [SerializeField] int maxNumOfEnemy;
     [SerializeField] GameObject[] battleArena;
     [SerializeField] Transform[] camFocus;
     Cinemachine.CinemachineVirtualCamera cinemachine;
@@ -24,21 +26,33 @@ public class BattleManager : MonoBehaviour
 
     public void StartBattle()
     {
+        numOfEnemy = 0;
         cinemachine.Follow = camFocus[arenaID];
         cinemachine.m_Lens.OrthographicSize = 7;
         battleArena[arenaID].SetActive(true);
         player.transform.position = camFocus[arenaID].position;
-        MusicManager.singleton.SetAndPlayBGM(2);
+
+        if (MusicManager.instance != null)
+            MusicManager.instance.SetAndPlayBGM(2);
     }
 
-    public void FinishBattle(){
-        for (int i = 0; i < battleArena.Length; i++)
+    public void FinishBattle()
+    {
+        if (numOfEnemy >= maxNumOfEnemy)
         {
-            battleArena[i].SetActive(false);
+            for (int i = 0; i < battleArena.Length; i++)
+            {
+                battleArena[i].SetActive(false);
+            }
+            cinemachine.m_Lens.OrthographicSize = 5;
+            cinemachine.m_Follow = player.transform;
+
+            if (MusicManager.instance != null)
+                MusicManager.instance.SetAndPlayBGM(1);
         }
-        cinemachine.m_Lens.OrthographicSize = 5;
-        MusicManager.singleton.SetAndPlayBGM(1);
     }
 
     public void SetArenaID(int id) => arenaID = id;
+    public void SetMaxEnemy(int enemy) => maxNumOfEnemy = enemy;
+    public void UpdNumOfEnemy() => numOfEnemy++;
 }

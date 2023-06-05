@@ -66,16 +66,7 @@ MonoBehaviour:
   - charName: 
     leftPortrait: {fileID: 0}
     rightPortrait: {fileID: 0}
-    sentence: <color=white>Di depan terlihat 3 buah raksasa besar yang berwujud Golem
-      berdatangan ke arah desa. Karena sedang dalam keadaan darurat, akhirnya sang
-      profesor hanya di tali ke sebuah tiang.
-    isNarrator: 1
-    dlgBGIndex: 0
-    dontUseHolderBG: 1
-  - charName: 
-    leftPortrait: {fileID: 0}
-    rightPortrait: {fileID: 0}
-    sentence: Ketika dalam kondiri yang diikat di sebuah tiang sang professor pun
+    sentence: Ketika dalam kondisi yang diikat di sebuah tiang sang professor pun
       berusaha meloloskan diri dari jeratan tali tersebut. Professor berusaha sekuat
       tenaga melepaskan ikatan tali pada tangannya namun usahanya itu tak membuahkan
       hasil.
